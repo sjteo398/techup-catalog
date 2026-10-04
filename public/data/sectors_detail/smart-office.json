@@ -1,0 +1,213 @@
+{
+  "sector": {
+    "slug": "smart-office",
+    "name": "Smart Office & Commercial",
+    "image": "/catalog/context/sector-office.jpg",
+    "blurb": "Mini PCs and all-in-ones for reception, meeting rooms, thin-client and general commercial deployment.",
+    "requirements": [
+      "Quiet compact design",
+      "Dual display & fast NVMe",
+      "Easy manageability",
+      "Windows 11 ready"
+    ]
+  },
+  "products": [
+    {
+      "model": "U-BOX-M5",
+      "slug": "u-box-m5",
+      "category": "mini-pc",
+      "sectors": [
+        "smart-office",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra / AMD Ryzen 6000-7000",
+        "Memory": "2× DDR5 SO-DIMM, up to 96/64GB",
+        "Storage": "M.2 M-Key 2280",
+        "I/O Ports": "2× 2.5GbE, 2× HDMI, 2× Type-C (USB+DP), 4× USB, TPM2.0",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "114.5 × 114.5 × 54.1 mm",
+        "Display": "—",
+        "Mounting": "VESA",
+        "Cooling": "Fan-cooled",
+        "OS Support": "—",
+        "Form Factor": "NUC Mini PC"
+      },
+      "cpu_platform": "Intel Core Ultra / AMD Ryzen 6000-7000",
+      "cooling": "Fan-cooled",
+      "form_factor": "NUC Mini PC",
+      "applications": "Business office, AV, network control terminals",
+      "datasheet_page": 21,
+      "datasheet_url": "/catalog/datasheets/page-21.png",
+      "image": "/catalog/products/mini_pc.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "44514e04-7e54-4dd5-90fc-d386c2d7aa9f",
+      "created_at": "2026-09-26T10:30:54.740065+00:00"
+    },
+    {
+      "model": "U-BOX-M3",
+      "slug": "u-box-m3",
+      "category": "mini-pc",
+      "sectors": [
+        "smart-office"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12th Alder Lake -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 2280, 1× SATA3.0",
+        "I/O Ports": "2× HDMI, 2× Type-C, LAN, 5× USB, RS-232, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "114.5 × 114.5 × 53 mm",
+        "Display": "—",
+        "Mounting": "VESA",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "NUC Mini PC"
+      },
+      "cpu_platform": "Intel 12th Alder Lake -U/-P",
+      "cooling": "—",
+      "form_factor": "NUC Mini PC",
+      "applications": "Business office, AV, network control terminals",
+      "datasheet_page": 22,
+      "datasheet_url": "/catalog/datasheets/page-22.png",
+      "image": "/catalog/products/mini_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "ca42662e-e563-45be-8825-b1be49593ec2",
+      "created_at": "2026-09-26T10:30:54.740069+00:00"
+    },
+    {
+      "model": "N-BOX-M1",
+      "slug": "n-box-m1",
+      "category": "mini-pc",
+      "sectors": [
+        "smart-office",
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–13th Gen -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "2× M.2 M-Key 2280",
+        "I/O Ports": "TPM2.0, 2× M.2 (WiFi/4G/5G), dual/single LAN, 2× HDMI, DP, Type-C (USB3.2+DP), Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "138 × 128 × 54 mm",
+        "Display": "—",
+        "Mounting": "VESA",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "NUC Mini PC"
+      },
+      "cpu_platform": "Intel Core 12–13th Gen -U/-P",
+      "cooling": "—",
+      "form_factor": "NUC Mini PC",
+      "applications": "Network control terminals, personal hosts",
+      "datasheet_page": 22,
+      "datasheet_url": "/catalog/datasheets/page-22.png",
+      "image": "/catalog/products/mini_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "0c8a5022-753f-43d8-8277-530b2f3cd786",
+      "created_at": "2026-09-26T10:30:54.740073+00:00"
+    },
+    {
+      "model": "C-BOX-M2",
+      "slug": "c-box-m2",
+      "category": "mini-pc",
+      "sectors": [
+        "smart-office",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake-N / Jasper Lake",
+        "Memory": "LPDDR4x/5x, up to 16GB",
+        "Storage": "1× M.2 M-Key 2242",
+        "I/O Ports": "LAN, 2× HDMI, 4× USB3.0, Audio, Type-C (PD)",
+        "Power Input": "DC 12V",
+        "Dimensions": "75 × 75 × 52 mm",
+        "Display": "—",
+        "Mounting": "VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "NUC Mini PC"
+      },
+      "cpu_platform": "Intel Alder Lake-N / Jasper Lake",
+      "cooling": "Fanless",
+      "form_factor": "NUC Mini PC",
+      "applications": "Business office, AV, network control terminals",
+      "datasheet_page": 21,
+      "datasheet_url": "/catalog/datasheets/page-21.png",
+      "image": "/catalog/products/mini_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "a5e46d7e-31a1-425e-9a72-2463afde77c9",
+      "created_at": "2026-09-26T10:30:54.740077+00:00"
+    },
+    {
+      "model": "P20-73",
+      "slug": "p20-73",
+      "category": "all-in-one",
+      "sectors": [
+        "smart-office",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "256GB / 512GB / 1TB",
+        "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "550 × 160 × 420 mm",
+        "Display": "23.8\" 16:9 LED widescreen",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "Windows 11",
+        "Form Factor": "All-in-One"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "All-in-One",
+      "applications": "Office, education, light creative work",
+      "datasheet_page": 28,
+      "datasheet_url": "/catalog/datasheets/page-28.png",
+      "image": "/catalog/products/aio.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "26aefe6b-d0d6-4565-94ea-048e469b622b",
+      "created_at": "2026-09-26T10:30:54.740139+00:00"
+    },
+    {
+      "model": "P20-72",
+      "slug": "p20-72",
+      "category": "all-in-one",
+      "sectors": [
+        "smart-office",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "256GB / 512GB / 1TB",
+        "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "550 × 160 × 420 mm",
+        "Display": "23.8\" 16:9 LED widescreen",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "Windows 11",
+        "Form Factor": "All-in-One"
+      },
+      "cpu_platform": "Intel Alder Lake",
+      "cooling": "—",
+      "form_factor": "All-in-One",
+      "applications": "Office, education, light creative work",
+      "datasheet_page": 28,
+      "datasheet_url": "/catalog/datasheets/page-28.png",
+      "image": "/catalog/products/aio.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "61e56dd3-ec01-4189-82ea-a10a88b75be3",
+      "created_at": "2026-09-26T10:30:54.740142+00:00"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "cpu_platform": [
+    "AMD Ryzen 5/7 (Phoenix)",
+    "AMD Ryzen AI 300",
+    "Intel 11th Tiger Lake-U",
+    "Intel 11–12th Tiger/Alder Lake",
+    "Intel 12th Alder Lake -U/-P",
+    "Intel 12–13th -U/-P",
+    "Intel 12–13th Alder/Raptor Lake -U/-P",
+    "Intel 12–13th Alder/Raptor Lake-S",
+    "Intel 12–13th Pentium / Celeron",
+    "Intel 12–13th i3~i9 / Pentium / Celeron",
+    "Intel 6–11th -U series",
+    "Intel 6–8th -U series",
+    "Intel 6–9th -S series",
+    "Intel Alder Lake",
+    "Intel Alder Lake -U/-P",
+    "Intel Alder Lake-N",
+    "Intel Alder Lake-N / Jasper Lake",
+    "Intel Core 12–13th -U/-P",
+    "Intel Core 12–13th Gen -U/-P",
+    "Intel Core 12–14th",
+    "Intel Core 14th / Ultra",
+    "Intel Core 6–11th / Celeron",
+    "Intel Core Ultra",
+    "Intel Core Ultra -U/H",
+    "Intel Core Ultra / AMD Ryzen 6000-7000",
+    "Intel Elkhart Lake",
+    "Intel Gemini Lake / Lake-R"
+  ],
+  "cooling": [
+    "Fan-cooled",
+    "Fanless"
+  ],
+  "form_factor": [
+    "1U Rackmount",
+    "2.5\" SBC",
+    "3.5\" SBC",
+    "All-in-One",
+    "Fanless Box PC",
+    "Live System",
+    "Mini-ITX (170×170)",
+    "NANO (120×120)",
+    "NUC (100×100)",
+    "NUC Mini PC",
+    "OPS Module",
+    "Panel PC"
+  ]
+}

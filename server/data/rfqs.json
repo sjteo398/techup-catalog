@@ -1,0 +1,68 @@
+[
+  {
+    "id": "RFQ-527980",
+    "created_at": "2026-10-02T10:05:27.980Z",
+    "status": "pending",
+    "contact": {},
+    "items": [
+      {
+        "model": "U-BOX-M5",
+        "slug": "u-box-m5",
+        "quantity": 1,
+        "note": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "RFQ-264625",
+    "created_at": "2026-09-27T09:44:24.625Z",
+    "status": "pending",
+    "contact": {},
+    "items": [
+      {
+        "model": "TM600B",
+        "slug": "tm600b",
+        "quantity": 1,
+        "note": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "RFQ-216445",
+    "created_at": "2026-09-27T09:43:36.445Z",
+    "status": "pending",
+    "contact": {},
+    "items": [
+      {
+        "model": "TM1800B",
+        "slug": "tm1800b",
+        "quantity": 1,
+        "note": ""
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "id": "RFQ-1001",
+    "created_at": "2026-09-25T09:39:49.245Z",
+    "status": "pending",
+    "contact": {
+      "name": "Alex Tan",
+      "company": "AeroTech Solutions",
+      "email": "alex@aerotech.example",
+      "phone": "+60 12-345 6789"
+    },
+    "items": [
+      {
+        "slug": "ad600ca",
+        "model": "AD600CA",
+        "image": "/catalog/products/motherboard.jpg",
+        "quantity": 5,
+        "note": "Need extended temperature range version."
+      }
+    ],
+    "notes": "Urgent quote requested for Q4 project deployment."
+  }
+]

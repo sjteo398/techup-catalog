@@ -1,0 +1,106 @@
+[
+  {
+    "slug": "manufacturing-automation",
+    "name": "Manufacturing & Automation",
+    "image": "/catalog/context/sector-manufacturing.jpg",
+    "blurb": "Rugged control computing for production lines, PLC/SCADA gateways, data acquisition and machine vision.",
+    "requirements": [
+      "Fanless, dust-tolerant operation",
+      "Rich serial I/O (RS-232/422/485) & GPIO",
+      "Wide DC input & vibration tolerance",
+      "Long product lifecycle for line stability"
+    ],
+    "count": 26
+  },
+  {
+    "slug": "robotics",
+    "name": "Robotics & AMR",
+    "image": "/catalog/context/sector-robotics.jpg",
+    "blurb": "Compact, high-compute controllers for robot arms, AMRs and cobots requiring low latency and dense connectivity.",
+    "requirements": [
+      "High compute in small footprint",
+      "Multiple LAN for sensors/vision",
+      "Wide DC / battery input",
+      "Shock & vibration resistance"
+    ],
+    "count": 7
+  },
+  {
+    "slug": "medical-healthcare",
+    "name": "Medical & Healthcare",
+    "image": "/catalog/context/sector-medical.jpg",
+    "blurb": "Reliable computing for diagnostic equipment, bedside terminals and imaging systems where uptime matters.",
+    "requirements": [
+      "Fanless quiet operation",
+      "Stable long-life supply",
+      "Isolated I/O options",
+      "Compact integration"
+    ],
+    "count": 3
+  },
+  {
+    "slug": "transportation-ev",
+    "name": "Transportation & EV",
+    "image": "/catalog/context/sector-transportation.jpg",
+    "blurb": "In-vehicle and roadside computing for fleet telematics, EV charging and intelligent transport systems.",
+    "requirements": [
+      "Wide 9–36V DC input",
+      "Wide operating temperature",
+      "Vibration-rated fanless build",
+      "4G/5G & GPS expansion"
+    ],
+    "count": 5
+  },
+  {
+    "slug": "network-security",
+    "name": "Network Security & Edge",
+    "image": "/catalog/context/sector-security.jpg",
+    "blurb": "Firewall, soft-router, VPN gateway and cloud-terminal platforms with dense networking.",
+    "requirements": [
+      "Multiple GbE + SFP fiber",
+      "LAN bypass / HA redundancy",
+      "Console management",
+      "Rack or desktop deployment"
+    ],
+    "count": 12
+  },
+  {
+    "slug": "retail-kiosk",
+    "name": "Retail & Self-Service Kiosk",
+    "image": "/catalog/context/sector-retail.jpg",
+    "blurb": "Self-service terminals, vending, POS and interactive kiosks needing clean integration and reliability.",
+    "requirements": [
+      "Compact / slim integration",
+      "Touch & multi-display support",
+      "Rich USB/COM for peripherals",
+      "24/7 continuous operation"
+    ],
+    "count": 9
+  },
+  {
+    "slug": "digital-signage",
+    "name": "Digital Signage & Display",
+    "image": "/catalog/context/sector-conference.jpg",
+    "blurb": "Media players, OPS modules and AIO systems for signage, education boards and conferencing.",
+    "requirements": [
+      "4K multi-display output",
+      "OPS slot compatibility",
+      "Reliable 24/7 playback",
+      "Remote manageability"
+    ],
+    "count": 14
+  },
+  {
+    "slug": "smart-office",
+    "name": "Smart Office & Commercial",
+    "image": "/catalog/context/sector-office.jpg",
+    "blurb": "Mini PCs and all-in-ones for reception, meeting rooms, thin-client and general commercial deployment.",
+    "requirements": [
+      "Quiet compact design",
+      "Dual display & fast NVMe",
+      "Easy manageability",
+      "Windows 11 ready"
+    ],
+    "count": 6
+  }
+]

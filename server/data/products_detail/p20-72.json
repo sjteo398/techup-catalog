@@ -1,0 +1,70 @@
+{
+  "product": {
+    "model": "P20-72",
+    "slug": "p20-72",
+    "category": "all-in-one",
+    "sectors": [
+      "smart-office",
+      "retail-kiosk"
+    ],
+    "specs": {
+      "CPU Platform": "Intel Alder Lake",
+      "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+      "Storage": "256GB / 512GB / 1TB",
+      "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+      "Power Input": "DC 12–19V",
+      "Dimensions": "550 × 160 × 420 mm",
+      "Display": "23.8\" 16:9 LED widescreen",
+      "Mounting": "—",
+      "Cooling": "—",
+      "OS Support": "Windows 11",
+      "Form Factor": "All-in-One"
+    },
+    "cpu_platform": "Intel Alder Lake",
+    "cooling": "—",
+    "form_factor": "All-in-One",
+    "applications": "Office, education, light creative work",
+    "datasheet_page": 28,
+    "datasheet_url": "/catalog/datasheets/page-28.png",
+    "image": "/catalog/products/aio.jpg",
+    "featured": false,
+    "flags": "",
+    "id": "61e56dd3-ec01-4189-82ea-a10a88b75be3",
+    "created_at": "2026-09-26T10:30:54.740142+00:00"
+  },
+  "related": [
+    {
+      "model": "P20-73",
+      "slug": "p20-73",
+      "category": "all-in-one",
+      "sectors": [
+        "smart-office",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "256GB / 512GB / 1TB",
+        "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "550 × 160 × 420 mm",
+        "Display": "23.8\" 16:9 LED widescreen",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "Windows 11",
+        "Form Factor": "All-in-One"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "All-in-One",
+      "applications": "Office, education, light creative work",
+      "datasheet_page": 28,
+      "datasheet_url": "/catalog/datasheets/page-28.png",
+      "image": "/catalog/products/aio.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "26aefe6b-d0d6-4565-94ea-048e469b622b",
+      "created_at": "2026-09-26T10:30:54.740139+00:00"
+    }
+  ]
+}

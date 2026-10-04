@@ -1,0 +1,117 @@
+{
+  "sector": {
+    "slug": "medical-healthcare",
+    "name": "Medical & Healthcare",
+    "image": "/catalog/context/sector-medical.jpg",
+    "blurb": "Reliable computing for diagnostic equipment, bedside terminals and imaging systems where uptime matters.",
+    "requirements": [
+      "Fanless quiet operation",
+      "Stable long-life supply",
+      "Isolated I/O options",
+      "Compact integration"
+    ]
+  },
+  "products": [
+    {
+      "model": "TL500Z3AW",
+      "slug": "tl500z3aw",
+      "category": "motherboards",
+      "sectors": [
+        "manufacturing-automation",
+        "transportation-ev",
+        "medical-healthcare"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 11th Tiger Lake-U",
+        "Memory": "1× DDR4 SO-DIMM, up to 48GB",
+        "Storage": "1× M.2 SSD, 1× SATA3.0",
+        "I/O Ports": "HDMI, LVDS/eDP, MiniDP, 8× USB, 6× COM, 2× LAN, CAN, LPT, Audio",
+        "Power Input": "DC 9–36V",
+        "Dimensions": "155 × 117 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "3.5\" SBC"
+      },
+      "cpu_platform": "Intel 11th Tiger Lake-U",
+      "cooling": "—",
+      "form_factor": "3.5\" SBC",
+      "applications": "Industrial control, embedded industrial PC",
+      "datasheet_page": 7,
+      "datasheet_url": "/catalog/datasheets/page-07.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "ae8a654b-c603-4265-87f0-a99a5ee1594b",
+      "created_at": "2026-09-26T10:30:54.739993+00:00"
+    },
+    {
+      "model": "PPC-156A-C",
+      "slug": "ppc-156a-c",
+      "category": "panel-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "retail-kiosk",
+        "medical-healthcare"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 6–11th / Celeron",
+        "Memory": "up to 64GB (CPU dependent)",
+        "Storage": "SSD 32GB+, add-on 2.5\" SATA",
+        "I/O Ports": "2× LAN, 6× USB, Audio, VGA, HDMI, 6× COM, 8× GPIO",
+        "Power Input": "DC 12V",
+        "Dimensions": "410 × 260 × 69 mm",
+        "Display": "15.6\" touch",
+        "Mounting": "Panel-mount / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Panel PC"
+      },
+      "cpu_platform": "Intel Core 6–11th / Celeron",
+      "cooling": "Fanless",
+      "form_factor": "Panel PC",
+      "applications": "Industrial control, outdoor displays",
+      "datasheet_page": 25,
+      "datasheet_url": "/catalog/datasheets/page-25.png",
+      "image": "/catalog/products/panel_pc.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "bb6de3d9-8f5e-407d-9116-05fd1d5dca5f",
+      "created_at": "2026-09-26T10:30:54.740108+00:00"
+    },
+    {
+      "model": "PPC-101A-C",
+      "slug": "ppc-101a-c",
+      "category": "panel-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "medical-healthcare"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 6–11th / Celeron",
+        "Memory": "up to 48GB (CPU dependent)",
+        "Storage": "SSD 32GB+",
+        "I/O Ports": "2× LAN, 4× USB, Audio, MiniDP, HDMI, 4× COM, 8× GPIO",
+        "Power Input": "DC 9–36V",
+        "Dimensions": "276 × 188 × 63.6 mm",
+        "Display": "10.1\" touch",
+        "Mounting": "Panel-mount / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Panel PC"
+      },
+      "cpu_platform": "Intel Core 6–11th / Celeron",
+      "cooling": "Fanless",
+      "form_factor": "Panel PC",
+      "applications": "Industrial control, outdoor displays",
+      "datasheet_page": 25,
+      "datasheet_url": "/catalog/datasheets/page-25.png",
+      "image": "/catalog/products/panel_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "b1949b3b-bb50-4bea-8e5e-6c2be1b244e7",
+      "created_at": "2026-09-26T10:30:54.740117+00:00"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "sector": {
+    "slug": "retail-kiosk",
+    "name": "Retail & Self-Service Kiosk",
+    "image": "/catalog/context/sector-retail.jpg",
+    "blurb": "Self-service terminals, vending, POS and interactive kiosks needing clean integration and reliability.",
+    "requirements": [
+      "Compact / slim integration",
+      "Touch & multi-display support",
+      "Rich USB/COM for peripherals",
+      "24/7 continuous operation"
+    ]
+  },
+  "products": [
+    {
+      "model": "TOP600B",
+      "slug": "top600b",
+      "category": "motherboards",
+      "sectors": [
+        "retail-kiosk",
+        "manufacturing-automation"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12–13th -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 SSD, 2× SATA3.0",
+        "I/O Ports": "HDMI, DP/VGA, LVDS/eDP, 6× USB, 6× COM, 2× LAN, Audio, TPM2.0 (opt)",
+        "Power Input": "DC 12V",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel 12–13th -U/-P",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Self-service machines, industrial control, commercial display",
+      "datasheet_page": 4,
+      "datasheet_url": "/catalog/datasheets/page-04.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "2ac252ee-cc86-4098-9cdc-bbee025b3c21",
+      "created_at": "2026-09-26T10:30:54.739963+00:00"
+    },
+    {
+      "model": "ITX660B",
+      "slug": "itx660b",
+      "category": "motherboards",
+      "sectors": [
+        "retail-kiosk",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–14th",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 SSD, 4× SATA3.0",
+        "I/O Ports": "HDMI, DP, VGA, 6× USB, 6× COM, 2× LAN, Audio, TPM2.0 (opt)",
+        "Power Input": "ATX 24+4 Pin",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Core 12–14th",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Self-service machines, industrial control, digital signage",
+      "datasheet_page": 6,
+      "datasheet_url": "/catalog/datasheets/page-06.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "8cd0ca24-d072-4fb5-8dd2-2afbaf884231",
+      "created_at": "2026-09-26T10:30:54.739975+00:00"
+    },
+    {
+      "model": "ITX610B",
+      "slug": "itx610b",
+      "category": "motherboards",
+      "sectors": [
+        "retail-kiosk",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12–13th Alder/Raptor Lake-S",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 SSD, 2× SATA3.0",
+        "I/O Ports": "2× HDMI, 2× DP, LVDS/eDP, 8× USB, 4× COM, 2× LAN, Audio",
+        "Power Input": "DC 12–24V, 120W",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel 12–13th Alder/Raptor Lake-S",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Self-service machines, industrial control, digital signage",
+      "datasheet_page": 6,
+      "datasheet_url": "/catalog/datasheets/page-06.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "28bd1046-bfbd-4015-8c39-8adb30114e49",
+      "created_at": "2026-09-26T10:30:54.739979+00:00"
+    },
+    {
+      "model": "Q-BOX-S5",
+      "slug": "q-box-s5",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "retail-kiosk",
+        "manufacturing-automation"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake-N",
+        "Memory": "LPDDR5, up to 16GB",
+        "Storage": "M.2 2242 (PCIe3.0 x2)",
+        "I/O Ports": "HDMI, 2× USB, LAN, 2× COM, Audio, 2× ANT",
+        "Power Input": "DC 12V",
+        "Dimensions": "146 × 100 × 50 mm",
+        "Display": "—",
+        "Mounting": "Wall / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel Alder Lake-N",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Industrial control, system industrial PC",
+      "datasheet_page": 19,
+      "datasheet_url": "/catalog/datasheets/page-19.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "688cbfe4-db41-431e-8e3c-f8398f702469",
+      "created_at": "2026-09-26T10:30:54.740040+00:00"
+    },
+    {
+      "model": "PPC-215A-C",
+      "slug": "ppc-215a-c",
+      "category": "panel-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 6–11th / Celeron",
+        "Memory": "up to 64GB (CPU dependent)",
+        "Storage": "SSD 32GB+, add-on 2.5\" SATA",
+        "I/O Ports": "2× LAN, 6× USB, Audio, VGA, HDMI, 6× COM, 8× GPIO",
+        "Power Input": "DC 12V",
+        "Dimensions": "540 × 336 × 71 mm",
+        "Display": "21.5\" touch",
+        "Mounting": "Panel-mount / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Panel PC"
+      },
+      "cpu_platform": "Intel Core 6–11th / Celeron",
+      "cooling": "Fanless",
+      "form_factor": "Panel PC",
+      "applications": "Industrial control, outdoor displays",
+      "datasheet_page": 25,
+      "datasheet_url": "/catalog/datasheets/page-25.png",
+      "image": "/catalog/products/panel_pc.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "61aca1ce-dc09-4605-94e8-b6d06155dc86",
+      "created_at": "2026-09-26T10:30:54.740105+00:00"
+    },
+    {
+      "model": "PPC-156A-C",
+      "slug": "ppc-156a-c",
+      "category": "panel-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "retail-kiosk",
+        "medical-healthcare"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 6–11th / Celeron",
+        "Memory": "up to 64GB (CPU dependent)",
+        "Storage": "SSD 32GB+, add-on 2.5\" SATA",
+        "I/O Ports": "2× LAN, 6× USB, Audio, VGA, HDMI, 6× COM, 8× GPIO",
+        "Power Input": "DC 12V",
+        "Dimensions": "410 × 260 × 69 mm",
+        "Display": "15.6\" touch",
+        "Mounting": "Panel-mount / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Panel PC"
+      },
+      "cpu_platform": "Intel Core 6–11th / Celeron",
+      "cooling": "Fanless",
+      "form_factor": "Panel PC",
+      "applications": "Industrial control, outdoor displays",
+      "datasheet_page": 25,
+      "datasheet_url": "/catalog/datasheets/page-25.png",
+      "image": "/catalog/products/panel_pc.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "bb6de3d9-8f5e-407d-9116-05fd1d5dca5f",
+      "created_at": "2026-09-26T10:30:54.740108+00:00"
+    },
+    {
+      "model": "LIVE-A1",
+      "slug": "live-a1",
+      "category": "live-systems",
+      "sectors": [
+        "digital-signage",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–13th -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "M.2 NVMe",
+        "I/O Ports": "2× LAN, 2× HDMI, 5× USB, HDMI-Out, Type-C (USB+DP), Audio",
+        "Power Input": "DC input",
+        "Dimensions": "200 × 260 × 450 mm",
+        "Display": "15.6\" 1920×1080, 10-pt touch, 90° rotation",
+        "Mounting": "Integrated stand",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Live System"
+      },
+      "cpu_platform": "Intel Core 12–13th -U/-P",
+      "cooling": "—",
+      "form_factor": "Live System",
+      "applications": "E-commerce live streaming, education/training, corporate launch, multi-camera switching",
+      "datasheet_page": 27,
+      "datasheet_url": "/catalog/datasheets/page-27.png",
+      "image": "/catalog/products/live.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "61e1d8f0-2baa-4efb-85fe-7c5dd806dae2",
+      "created_at": "2026-09-26T10:30:54.740135+00:00"
+    },
+    {
+      "model": "P20-73",
+      "slug": "p20-73",
+      "category": "all-in-one",
+      "sectors": [
+        "smart-office",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "256GB / 512GB / 1TB",
+        "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "550 × 160 × 420 mm",
+        "Display": "23.8\" 16:9 LED widescreen",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "Windows 11",
+        "Form Factor": "All-in-One"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "All-in-One",
+      "applications": "Office, education, light creative work",
+      "datasheet_page": 28,
+      "datasheet_url": "/catalog/datasheets/page-28.png",
+      "image": "/catalog/products/aio.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "26aefe6b-d0d6-4565-94ea-048e469b622b",
+      "created_at": "2026-09-26T10:30:54.740139+00:00"
+    },
+    {
+      "model": "P20-72",
+      "slug": "p20-72",
+      "category": "all-in-one",
+      "sectors": [
+        "smart-office",
+        "retail-kiosk"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "256GB / 512GB / 1TB",
+        "I/O Ports": "6× USB, LAN, VGA/COM (opt), HDMI, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "550 × 160 × 420 mm",
+        "Display": "23.8\" 16:9 LED widescreen",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "Windows 11",
+        "Form Factor": "All-in-One"
+      },
+      "cpu_platform": "Intel Alder Lake",
+      "cooling": "—",
+      "form_factor": "All-in-One",
+      "applications": "Office, education, light creative work",
+      "datasheet_page": 28,
+      "datasheet_url": "/catalog/datasheets/page-28.png",
+      "image": "/catalog/products/aio.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "61e56dd3-ec01-4189-82ea-a10a88b75be3",
+      "created_at": "2026-09-26T10:30:54.740142+00:00"
+    }
+  ]
+}

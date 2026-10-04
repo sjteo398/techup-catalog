@@ -1,0 +1,132 @@
+{
+  "product": {
+    "model": "OPS186U",
+    "slug": "ops186u",
+    "category": "ops-modules",
+    "sectors": [
+      "digital-signage"
+    ],
+    "specs": {
+      "CPU Platform": "Intel Core 12–13th -U/-P",
+      "Memory": "1× DDR4 SO-DIMM, up to 32GB",
+      "Storage": "1× M.2 2280, 1× SATA3.0",
+      "I/O Ports": "HDMI, MiniDP, LAN, 4× USB, Audio, Type-C",
+      "Power Input": "DC input",
+      "Dimensions": "180 × 119 × 30 mm (international std)",
+      "Display": "—",
+      "Mounting": "OPS slot",
+      "Cooling": "—",
+      "OS Support": "—",
+      "Form Factor": "OPS Module"
+    },
+    "cpu_platform": "Intel Core 12–13th -U/-P",
+    "cooling": "—",
+    "form_factor": "OPS Module",
+    "applications": "Digital media, education, teleconferencing",
+    "datasheet_page": 27,
+    "datasheet_url": "/catalog/datasheets/page-27.png",
+    "image": "/catalog/products/ops.jpg",
+    "featured": false,
+    "flags": "",
+    "id": "4e7a5de0-e5ac-4a87-b143-da2a5c6c2bdf",
+    "created_at": "2026-09-26T10:30:54.740128+00:00"
+  },
+  "related": [
+    {
+      "model": "OPS111S",
+      "slug": "ops111s",
+      "category": "ops-modules",
+      "sectors": [
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 14th / Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "2× M.2 2280 (PCIe4.0 x4), 1× SATA3.0",
+        "I/O Ports": "HDMI, DP, LAN, 4× USB, COM, Audio",
+        "Power Input": "DC 12–19V, 120W",
+        "Dimensions": "180 × 220 × 42 mm (domestic std)",
+        "Display": "—",
+        "Mounting": "OPS slot",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "OPS Module"
+      },
+      "cpu_platform": "Intel Core 14th / Ultra",
+      "cooling": "—",
+      "form_factor": "OPS Module",
+      "applications": "Digital media, education platforms, teleconferencing",
+      "datasheet_page": 26,
+      "datasheet_url": "/catalog/datasheets/page-26.png",
+      "image": "/catalog/products/ops.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "3bd4feab-e0b2-4053-a74b-be8da00ef2e3",
+      "created_at": "2026-09-26T10:30:54.740121+00:00"
+    },
+    {
+      "model": "OPS121S",
+      "slug": "ops121s",
+      "category": "ops-modules",
+      "sectors": [
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–13th -U/-P",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "2× M.2 2280 (PCIe4.0 x4), 1× SATA3.0",
+        "I/O Ports": "HDMI, MiniDP, Type-C (USB3.0+DP), Audio, 4× USB, single/dual LAN",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "180 × 195 × 42 mm (domestic std)",
+        "Display": "—",
+        "Mounting": "OPS slot",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "OPS Module"
+      },
+      "cpu_platform": "Intel Core 12–13th -U/-P",
+      "cooling": "—",
+      "form_factor": "OPS Module",
+      "applications": "Digital media, education platforms, teleconferencing",
+      "datasheet_page": 27,
+      "datasheet_url": "/catalog/datasheets/page-27.png",
+      "image": "/catalog/products/ops.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "7cf0552e-0aee-46b3-bb38-5704bdfe1b6a",
+      "created_at": "2026-09-26T10:30:54.740124+00:00"
+    },
+    {
+      "model": "S30-72",
+      "slug": "s30-72",
+      "category": "ops-modules",
+      "sectors": [
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–13th -U/-P",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 2280, 1× SATA3.0",
+        "I/O Ports": "6× USB, Type-C, HDMI, DP, LAN, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "180 × 195 × 42 mm",
+        "Display": "—",
+        "Mounting": "OPS slot",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "OPS Module"
+      },
+      "cpu_platform": "Intel Core 12–13th -U/-P",
+      "cooling": "—",
+      "form_factor": "OPS Module",
+      "applications": "Digital media, education, teleconferencing, KTV",
+      "datasheet_page": 26,
+      "datasheet_url": "/catalog/datasheets/page-26.png",
+      "image": "/catalog/products/ops.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "adabaad3-7ac9-4092-a7a0-db7ad0e8170f",
+      "created_at": "2026-09-26T10:30:54.740131+00:00"
+    }
+  ]
+}

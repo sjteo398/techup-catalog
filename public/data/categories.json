@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "motherboards",
+    "name": "Industrial Motherboards",
+    "tagline": "ITX, NANO, NUC & 3.5\" embedded boards",
+    "image": "/catalog/products/motherboard.jpg",
+    "description": "Long-lifecycle industrial motherboards across ITX (170×170), 3.5\", 2.5\", NANO and NUC form factors. Wide CPU support from Intel Core Ultra and 12–14th Gen down to fanless Alder Lake-N, Elkhart Lake and domestic Feiteng platforms.",
+    "differentiators": [
+      "Wide DC input options (9–36V)",
+      "Rich legacy I/O: up to 6× COM, LVDS/eDP",
+      "TPM 2.0 security option",
+      "5–7 year supply lifecycle"
+    ],
+    "count": 20
+  },
+  {
+    "slug": "embedded-box-pc",
+    "name": "Embedded Box PCs",
+    "tagline": "Fanless, cableless rugged computers",
+    "image": "/catalog/products/box_pc.jpg",
+    "description": "Fanless aluminium box PCs engineered for continuous 24/7 operation in dust, vibration and wide-temperature environments. Cableless internal design for shock resistance and field reliability.",
+    "differentiators": [
+      "Fanless all-aluminium chassis",
+      "Cableless shock-resistant design",
+      "Wide-temp operation",
+      "Flexible PCIe/expansion options"
+    ],
+    "count": 9
+  },
+  {
+    "slug": "mini-pc",
+    "name": "NUC Mini PC Hosts",
+    "tagline": "Compact high-performance mini computers",
+    "image": "/catalog/products/mini_pc.jpg",
+    "description": "Small-form-factor NUC hosts balancing compute density and footprint for control terminals, signage players and edge nodes. Latest Intel Core Ultra and AMD Ryzen options.",
+    "differentiators": [
+      "Ultra-compact footprint",
+      "Dual/quad LAN options",
+      "Intel Core Ultra / AMD Ryzen AI",
+      "M.2 NVMe storage"
+    ],
+    "count": 4
+  },
+  {
+    "slug": "network-security",
+    "name": "Network Security Appliances",
+    "tagline": "Rackmount firewall & routing platforms",
+    "image": "/catalog/products/rackmount.jpg",
+    "description": "1U rackmount and desktop network appliances with multi-port GbE, SFP fiber and bypass options for firewall, soft-router, VPN and edge-security deployments.",
+    "differentiators": [
+      "6–12× GbE LAN + SFP",
+      "Console & LAN bypass",
+      "Redundant power options",
+      "1U rack or desktop"
+    ],
+    "count": 6
+  },
+  {
+    "slug": "panel-pc",
+    "name": "Industrial Panel PCs",
+    "tagline": "All-metal fanless HMI touch panels",
+    "image": "/catalog/products/panel_pc.jpg",
+    "description": "All-metal, fanless touch panel PCs for HMI, machine-side control and outdoor-readable display. Panel-mount and VESA options with rich COM/GPIO I/O.",
+    "differentiators": [
+      "All-metal fanless design",
+      "Panel-mount & VESA",
+      "6× COM + 8× GPIO",
+      "10.1\"–21.5\" sizes"
+    ],
+    "count": 4
+  },
+  {
+    "slug": "ops-modules",
+    "name": "OPS Display Modules",
+    "tagline": "Slot-in computing for smart displays",
+    "image": "/catalog/products/ops.jpg",
+    "description": "Standard-slot OPS (Open Pluggable Specification) computing modules for interactive flat panels, education boards and conferencing displays. Hot-swappable JAE 80-pin interface.",
+    "differentiators": [
+      "OPS 80-pin standard",
+      "Tool-less slot-in install",
+      "Up to Intel Core Ultra",
+      "Domestic & international sizes"
+    ],
+    "count": 4
+  },
+  {
+    "slug": "all-in-one",
+    "name": "All-in-One Computers",
+    "tagline": "Integrated display + compute workstations",
+    "image": "/catalog/products/aio.jpg",
+    "description": "23.8\" integrated all-in-one workstations for reception, kiosk, education and light-industrial front-of-house deployments. Windows 11 ready.",
+    "differentiators": [
+      "23.8\" LED widescreen",
+      "Intel Core Ultra option",
+      "Windows 11",
+      "Clean cable-managed build"
+    ],
+    "count": 2
+  },
+  {
+    "slug": "live-systems",
+    "name": "Live Streaming Systems",
+    "tagline": "All-in-one multi-camera streaming decks",
+    "image": "/catalog/products/live.jpg",
+    "description": "Portable all-in-one live-streaming computers with rotating touchscreen and multi-signal HDMI switching for e-commerce, training and event broadcast.",
+    "differentiators": [
+      "15.6\" rotating touch (90°)",
+      "Multi HDMI in/out switching",
+      "10-point capacitive touch",
+      "Event / e-commerce ready"
+    ],
+    "count": 1
+  }
+]

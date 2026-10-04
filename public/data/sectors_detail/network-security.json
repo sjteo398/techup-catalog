@@ -1,0 +1,404 @@
+{
+  "sector": {
+    "slug": "network-security",
+    "name": "Network Security & Edge",
+    "image": "/catalog/context/sector-security.jpg",
+    "blurb": "Firewall, soft-router, VPN gateway and cloud-terminal platforms with dense networking.",
+    "requirements": [
+      "Multiple GbE + SFP fiber",
+      "LAN bypass / HA redundancy",
+      "Console management",
+      "Rack or desktop deployment"
+    ]
+  },
+  "products": [
+    {
+      "model": "NAS-H670",
+      "slug": "nas-h670",
+      "category": "motherboards",
+      "sectors": [
+        "network-security",
+        "manufacturing-automation"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–14th",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "3× M.2 2280, 8× SATA3.0, RAID 0/1/5/10",
+        "I/O Ports": "HDMI, DP, 9× USB, Audio, 2× LAN, TPM2.0 (opt)",
+        "Power Input": "ATX 24+8 Pin",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Core 12–14th",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Data storage / NAS, industrial control",
+      "datasheet_page": 5,
+      "datasheet_url": "/catalog/datasheets/page-05.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": true,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "c3024008-3fa1-4e30-8197-f9f74b8fd023",
+      "created_at": "2026-09-26T10:30:54.739983+00:00"
+    },
+    {
+      "model": "AD600CA",
+      "slug": "ad600ca",
+      "category": "motherboards",
+      "sectors": [
+        "robotics",
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 SSD, 1× SATA3.0",
+        "I/O Ports": "2× HDMI, 2× Type-C (DP), 5× USB, COM, Audio, 1× LAN, TPM2.0 (opt)",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "100 × 100 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "NUC (100×100)"
+      },
+      "cpu_platform": "Intel Alder Lake -U/-P",
+      "cooling": "—",
+      "form_factor": "NUC (100×100)",
+      "applications": "NUC host, robot control, cloud terminals",
+      "datasheet_page": 11,
+      "datasheet_url": "/catalog/datasheets/page-11.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "65824775-0287-4deb-8a5d-18344cf7e676",
+      "created_at": "2026-09-26T10:30:54.740013+00:00"
+    },
+    {
+      "model": "UT100CA",
+      "slug": "ut100ca",
+      "category": "motherboards",
+      "sectors": [
+        "robotics",
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "1× M.2 SSD, 1× SATA3.0",
+        "I/O Ports": "2× HDMI, 2× Type-C (DP), 4× USB, 1× COM, 2× LAN, Audio, TPM2.0 (opt)",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "100 × 100 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "NUC (100×100)"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "NUC (100×100)",
+      "applications": "NUC host, robot control, cloud terminals",
+      "datasheet_page": 11,
+      "datasheet_url": "/catalog/datasheets/page-11.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "3b43a258-0ca1-481a-978e-ea52da946c1d",
+      "created_at": "2026-09-26T10:30:54.740021+00:00"
+    },
+    {
+      "model": "AD30NA6L",
+      "slug": "ad30na6l",
+      "category": "motherboards",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake-N",
+        "Memory": "1× DDR5 SO-DIMM, up to 16GB",
+        "Storage": "1× M.2 SSD, 1× SATA3.0",
+        "I/O Ports": "HDMI2.0, 5× USB, 2× COM, 1× LAN + 6× LAN (PoE), TPM2.0 (opt)",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "120 × 120 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "NANO (120×120)"
+      },
+      "cpu_platform": "Intel Alder Lake-N",
+      "cooling": "Fanless",
+      "form_factor": "NANO (120×120)",
+      "applications": "Soft router, robot control, cloud terminal",
+      "datasheet_page": 12,
+      "datasheet_url": "/catalog/datasheets/page-12.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "d8e3665b-fb1c-4c6b-b165-f6ff99006c67",
+      "created_at": "2026-09-26T10:30:54.740025+00:00"
+    },
+    {
+      "model": "N-BOX-TA",
+      "slug": "n-box-ta",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Gemini Lake / Lake-R",
+        "Memory": "DDR4 SO-DIMM, up to 8GB",
+        "Storage": "2.5\" HDD, eMMC, mSATA",
+        "I/O Ports": "HDMI, VGA, 2× COM, 2× LAN, 2× USB",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "132.2 × 134 × 45.3 mm",
+        "Display": "—",
+        "Mounting": "Wall / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel Gemini Lake / Lake-R",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Cloud terminal, industrial control",
+      "datasheet_page": 19,
+      "datasheet_url": "/catalog/datasheets/page-19.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "8e8a1728-c2df-4041-ad25-f3579f5866d4",
+      "created_at": "2026-09-26T10:30:54.740061+00:00"
+    },
+    {
+      "model": "N-BOX-M1",
+      "slug": "n-box-m1",
+      "category": "mini-pc",
+      "sectors": [
+        "smart-office",
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core 12–13th Gen -U/-P",
+        "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+        "Storage": "2× M.2 M-Key 2280",
+        "I/O Ports": "TPM2.0, 2× M.2 (WiFi/4G/5G), dual/single LAN, 2× HDMI, DP, Type-C (USB3.2+DP), Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "138 × 128 × 54 mm",
+        "Display": "—",
+        "Mounting": "VESA",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "NUC Mini PC"
+      },
+      "cpu_platform": "Intel Core 12–13th Gen -U/-P",
+      "cooling": "—",
+      "form_factor": "NUC Mini PC",
+      "applications": "Network control terminals, personal hosts",
+      "datasheet_page": 22,
+      "datasheet_url": "/catalog/datasheets/page-22.png",
+      "image": "/catalog/products/mini_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "0c8a5022-753f-43d8-8277-530b2f3cd786",
+      "created_at": "2026-09-26T10:30:54.740073+00:00"
+    },
+    {
+      "model": "FA-6706S-2UM",
+      "slug": "fa-6706s-2um",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12–13th i3~i9 / Pentium / Celeron",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "M.2 2280, 4× SATA3.0, reserved 4× 3.5\" SATA",
+        "I/O Ports": "2× USB3.2, 6× LAN, RJ45 Console, HDMI",
+        "Power Input": "1U ATX 24+8 Pin",
+        "Dimensions": "525 × 486 × 89 mm",
+        "Display": "—",
+        "Mounting": "1U Rackmount",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel 12–13th i3~i9 / Pentium / Celeron",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Smart education, intelligent monitoring, data security",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "2ffff139-b742-4906-8622-d40f2937d54e",
+      "created_at": "2026-09-26T10:30:54.740081+00:00"
+    },
+    {
+      "model": "FA-6106S",
+      "slug": "fa-6106s",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12–13th Pentium / Celeron",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 2280, 3× SATA3.0, SATA/CF (opt)",
+        "I/O Ports": "PCIe x8, 6× RJ45, 4× SFP, 2× USB, RJ45 Console, HA bypass",
+        "Power Input": "1U ATX 24+8 Pin",
+        "Dimensions": "486 × 411 × 44 mm",
+        "Display": "—",
+        "Mounting": "1U Rackmount",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel 12–13th Pentium / Celeron",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Network security, soft router",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "d53aa233-d9ff-4e1b-bf33-180ed02f3652",
+      "created_at": "2026-09-26T10:30:54.740085+00:00"
+    },
+    {
+      "model": "FA-6706S",
+      "slug": "fa-6706s",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 12–13th Pentium / Celeron",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 2280, 3× SATA3.0, SATA/CF (opt)",
+        "I/O Ports": "HDMI, RJ45 Console, 2× USB3.2, 6× LAN, 4× GbE",
+        "Power Input": "ATX",
+        "Dimensions": "525 × 486 × 89 mm",
+        "Display": "—",
+        "Mounting": "1U Rackmount",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel 12–13th Pentium / Celeron",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Smart education, surveillance, data security",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "73bb6cfe-75a7-4696-9891-c95aa00dd728",
+      "created_at": "2026-09-26T10:30:54.740090+00:00"
+    },
+    {
+      "model": "FA-50U12T",
+      "slug": "fa-50u12t",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 11th Tiger Lake-U",
+        "Memory": "1× DDR4 SO-DIMM, up to 48GB",
+        "Storage": "1× M.2 2280, 2× SATA3.0",
+        "I/O Ports": "VGA, HDMI, 2× RJ45, 4× USB, 12× LAN",
+        "Power Input": "Mean Well 200W redundant, AC 100–240V",
+        "Dimensions": "486 × 411 × 45 mm",
+        "Display": "—",
+        "Mounting": "1U Rackmount",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel 11th Tiger Lake-U",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Network security, soft routing",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "0e9b2301-daa3-4361-8fcc-fff8e60698c0",
+      "created_at": "2026-09-26T10:30:54.740093+00:00"
+    },
+    {
+      "model": "FA-64U6E",
+      "slug": "fa-64u6e",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Elkhart Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "M.2 2280, SATA3.0/CF",
+        "I/O Ports": "HDMI, VGA, Console, 2× USB, 6× LAN, 2× SFP (opt)",
+        "Power Input": "ATX",
+        "Dimensions": "480 × 370 × 44.5 mm",
+        "Display": "—",
+        "Mounting": "1U Rackmount",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel Elkhart Lake",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Network security, soft routing",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "89f0f043-33c7-4f6e-b926-adf2da1d2597",
+      "created_at": "2026-09-26T10:30:54.740097+00:00"
+    },
+    {
+      "model": "FA-19U6J",
+      "slug": "fa-19u6j",
+      "category": "network-security",
+      "sectors": [
+        "network-security"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 11th Tiger Lake-U",
+        "Memory": "1× SO-DIMM, up to 48GB",
+        "Storage": "1× M.2 Key-M (2242/2280), 2× SATA3.0",
+        "I/O Ports": "6× LAN, 2× USB, RJ45 Console, VGA",
+        "Power Input": "DC 12V",
+        "Dimensions": "480 × 200 × 45 mm",
+        "Display": "—",
+        "Mounting": "Desktop / Rack",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "1U Rackmount"
+      },
+      "cpu_platform": "Intel 11th Tiger Lake-U",
+      "cooling": "—",
+      "form_factor": "1U Rackmount",
+      "applications": "Network security, soft routing",
+      "datasheet_page": 23,
+      "datasheet_url": "/catalog/datasheets/page-23.png",
+      "image": "/catalog/products/rackmount.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "1a7b469a-5af9-4d37-b8e0-a7055c6f621e",
+      "created_at": "2026-09-26T10:30:54.740101+00:00"
+    }
+  ]
+}

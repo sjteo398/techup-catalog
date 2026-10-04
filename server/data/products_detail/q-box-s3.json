@@ -1,0 +1,168 @@
+{
+  "product": {
+    "model": "Q-BOX-S3",
+    "slug": "q-box-s3",
+    "category": "embedded-box-pc",
+    "sectors": [
+      "manufacturing-automation"
+    ],
+    "specs": {
+      "CPU Platform": "Intel 12–13th Alder/Raptor Lake -U/-P",
+      "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+      "Storage": "2× SATA3.0, 1× M.2 2280",
+      "I/O Ports": "HDMI, VGA, 6× COM, 2× LAN, 6× USB, GPIO, Audio",
+      "Power Input": "DC 12V",
+      "Dimensions": "236 × 185 × 85 mm",
+      "Display": "—",
+      "Mounting": "Wall",
+      "Cooling": "Fanless",
+      "OS Support": "—",
+      "Form Factor": "Fanless Box PC"
+    },
+    "cpu_platform": "Intel 12–13th Alder/Raptor Lake -U/-P",
+    "cooling": "Fanless",
+    "form_factor": "Fanless Box PC",
+    "applications": "Industrial control, data acquisition",
+    "datasheet_page": 19,
+    "datasheet_url": "/catalog/datasheets/page-19.png",
+    "image": "/catalog/products/box_pc.jpg",
+    "featured": true,
+    "flags": "",
+    "id": "403b72e9-294c-41d4-8942-b89d68c8119e",
+    "created_at": "2026-09-26T10:30:54.740033+00:00"
+  },
+  "related": [
+    {
+      "model": "Q-BOX-E10",
+      "slug": "q-box-e10",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "robotics"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra -U/H",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "SATA3.0, M.2 M-Key 2280 (opt)",
+        "I/O Ports": "2× LAN, HDMI, DP, Type-C (DP+USB), 6× USB, 5× COM, Audio",
+        "Power Input": "DC 9–36V",
+        "Dimensions": "174 × 129 × 86 mm",
+        "Display": "—",
+        "Mounting": "Wall / DIN (opt)",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel Core Ultra -U/H",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Industrial control, system industrial PC",
+      "datasheet_page": 19,
+      "datasheet_url": "/catalog/datasheets/page-19.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": true,
+      "flags": "",
+      "id": "f6138397-1c38-46b4-893b-07cedf98c91c",
+      "created_at": "2026-09-26T10:30:54.740029+00:00"
+    },
+    {
+      "model": "Q-BOX-E9",
+      "slug": "q-box-e9",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "transportation-ev"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Elkhart Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 32GB",
+        "Storage": "M.2 2280, SATA3.0",
+        "I/O Ports": "HDMI, DP, 2× LAN, 8× USB, 6× COM, 8× GPIO, Audio, Phoenix power",
+        "Power Input": "DC 9–36V",
+        "Dimensions": "127.7 × 209.4 × 70.6 mm",
+        "Display": "—",
+        "Mounting": "Wall",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel Elkhart Lake",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Industrial control, data acquisition",
+      "datasheet_page": 19,
+      "datasheet_url": "/catalog/datasheets/page-19.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "4f62ef21-4f8f-4386-ba21-9ba8bbc3e01f",
+      "created_at": "2026-09-26T10:30:54.740037+00:00"
+    },
+    {
+      "model": "Q-BOX-S5",
+      "slug": "q-box-s5",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "retail-kiosk",
+        "manufacturing-automation"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake-N",
+        "Memory": "LPDDR5, up to 16GB",
+        "Storage": "M.2 2242 (PCIe3.0 x2)",
+        "I/O Ports": "HDMI, 2× USB, LAN, 2× COM, Audio, 2× ANT",
+        "Power Input": "DC 12V",
+        "Dimensions": "146 × 100 × 50 mm",
+        "Display": "—",
+        "Mounting": "Wall / VESA",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel Alder Lake-N",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Industrial control, system industrial PC",
+      "datasheet_page": 19,
+      "datasheet_url": "/catalog/datasheets/page-19.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "688cbfe4-db41-431e-8e3c-f8398f702469",
+      "created_at": "2026-09-26T10:30:54.740040+00:00"
+    },
+    {
+      "model": "Q-BOX-E7",
+      "slug": "q-box-e7",
+      "category": "embedded-box-pc",
+      "sectors": [
+        "manufacturing-automation",
+        "transportation-ev"
+      ],
+      "specs": {
+        "CPU Platform": "Intel 6–11th -U series",
+        "Memory": "1× DDR4 SO-DIMM",
+        "Storage": "1× M.2 2242, 1× SATA3.0",
+        "I/O Ports": "6× COM, 2× LAN, 8× USB, HDMI, MiniDP, GPIO, Audio",
+        "Power Input": "DC 9–36V",
+        "Dimensions": "209 × 122 × 70.6 mm",
+        "Display": "—",
+        "Mounting": "Wall",
+        "Cooling": "Fanless",
+        "OS Support": "—",
+        "Form Factor": "Fanless Box PC"
+      },
+      "cpu_platform": "Intel 6–11th -U series",
+      "cooling": "Fanless",
+      "form_factor": "Fanless Box PC",
+      "applications": "Industrial control, data acquisition",
+      "datasheet_page": 20,
+      "datasheet_url": "/catalog/datasheets/page-20.png",
+      "image": "/catalog/products/box_pc.jpg",
+      "featured": false,
+      "flags": "",
+      "id": "94fa32d5-c93b-4c24-aadc-3affad3f415d",
+      "created_at": "2026-09-26T10:30:54.740044+00:00"
+    }
+  ]
+}

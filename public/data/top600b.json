@@ -1,0 +1,168 @@
+{
+  "product": {
+    "model": "TOP600B",
+    "slug": "top600b",
+    "category": "motherboards",
+    "sectors": [
+      "retail-kiosk",
+      "manufacturing-automation"
+    ],
+    "specs": {
+      "CPU Platform": "Intel 12–13th -U/-P",
+      "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+      "Storage": "1× M.2 SSD, 2× SATA3.0",
+      "I/O Ports": "HDMI, DP/VGA, LVDS/eDP, 6× USB, 6× COM, 2× LAN, Audio, TPM2.0 (opt)",
+      "Power Input": "DC 12V",
+      "Dimensions": "170 × 170 mm",
+      "Display": "—",
+      "Mounting": "—",
+      "Cooling": "—",
+      "OS Support": "—",
+      "Form Factor": "Mini-ITX (170×170)"
+    },
+    "cpu_platform": "Intel 12–13th -U/-P",
+    "cooling": "—",
+    "form_factor": "Mini-ITX (170×170)",
+    "applications": "Self-service machines, industrial control, commercial display",
+    "datasheet_page": 4,
+    "datasheet_url": "/catalog/datasheets/page-04.png",
+    "image": "/catalog/products/motherboard.jpg",
+    "featured": false,
+    "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+    "id": "2ac252ee-cc86-4098-9cdc-bbee025b3c21",
+    "created_at": "2026-09-26T10:30:54.739963+00:00"
+  },
+  "related": [
+    {
+      "model": "TM1800B",
+      "slug": "tm1800b",
+      "category": "motherboards",
+      "sectors": [
+        "manufacturing-automation",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "1× M.2 SSD, 2× SATA3.0",
+        "I/O Ports": "HDMI, VGA/COM (DB9), 4× USB, 1× LAN, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Commercial display, industrial control",
+      "datasheet_page": 4,
+      "datasheet_url": "/catalog/datasheets/page-04.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": true,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "fd61d5e3-5310-427f-80f9-7700091fa7a4",
+      "created_at": "2026-09-26T10:30:54.739921+00:00"
+    },
+    {
+      "model": "TM600B",
+      "slug": "tm600b",
+      "category": "motherboards",
+      "sectors": [
+        "manufacturing-automation",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Alder Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 64GB",
+        "Storage": "1× M.2 2280, 1× SATA",
+        "I/O Ports": "HDMI, VGA/COM (DB9), LVDS/eDP, Audio, TPM2.0 (opt)",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Alder Lake",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Commercial display, industrial control",
+      "datasheet_page": 4,
+      "datasheet_url": "/catalog/datasheets/page-04.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "5e1beb87-3a97-4cbf-9425-3bcddae903ec",
+      "created_at": "2026-09-26T10:30:54.739936+00:00"
+    },
+    {
+      "model": "TOP800B",
+      "slug": "top800b",
+      "category": "motherboards",
+      "sectors": [
+        "manufacturing-automation",
+        "digital-signage"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Core Ultra",
+        "Memory": "2× DDR5 SO-DIMM, up to 96GB",
+        "Storage": "1× M.2 SSD, 2× SATA3.0",
+        "I/O Ports": "HDMI, DP/VGA, LVDS/eDP, 10× USB, 6× COM, 2× LAN, Audio",
+        "Power Input": "DC 12–19V",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Core Ultra",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Commercial display, industrial control",
+      "datasheet_page": 4,
+      "datasheet_url": "/catalog/datasheets/page-04.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": true,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "a5c82b8f-f3bf-4489-b5fc-724170e2cd7d",
+      "created_at": "2026-09-26T10:30:54.739946+00:00"
+    },
+    {
+      "model": "TOP642C",
+      "slug": "top642c",
+      "category": "motherboards",
+      "sectors": [
+        "manufacturing-automation"
+      ],
+      "specs": {
+        "CPU Platform": "Intel Elkhart Lake",
+        "Memory": "2× DDR4 SO-DIMM, up to 32GB",
+        "Storage": "eMMC, 1× mSATA, 1× SATA3.0",
+        "I/O Ports": "HDMI, VGA/DP, LVDS/eDP, 6× USB, 2× LAN, 6× COM, Audio",
+        "Power Input": "DC 12V",
+        "Dimensions": "170 × 170 mm",
+        "Display": "—",
+        "Mounting": "—",
+        "Cooling": "—",
+        "OS Support": "—",
+        "Form Factor": "Mini-ITX (170×170)"
+      },
+      "cpu_platform": "Intel Elkhart Lake",
+      "cooling": "—",
+      "form_factor": "Mini-ITX (170×170)",
+      "applications": "Commercial display, industrial control",
+      "datasheet_page": 4,
+      "datasheet_url": "/catalog/datasheets/page-04.png",
+      "image": "/catalog/products/motherboard.jpg",
+      "featured": false,
+      "flags": "Representative render — real catalog photo available on datasheet page; per-SKU studio photography pending.",
+      "id": "6f5481e3-8352-40db-8bf5-53b163c09350",
+      "created_at": "2026-09-26T10:30:54.739953+00:00"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "product": {
+    "model": "LIVE-A1",
+    "slug": "live-a1",
+    "category": "live-systems",
+    "sectors": [
+      "digital-signage",
+      "retail-kiosk"
+    ],
+    "specs": {
+      "CPU Platform": "Intel Core 12–13th -U/-P",
+      "Memory": "2× DDR5 SO-DIMM, up to 64GB",
+      "Storage": "M.2 NVMe",
+      "I/O Ports": "2× LAN, 2× HDMI, 5× USB, HDMI-Out, Type-C (USB+DP), Audio",
+      "Power Input": "DC input",
+      "Dimensions": "200 × 260 × 450 mm",
+      "Display": "15.6\" 1920×1080, 10-pt touch, 90° rotation",
+      "Mounting": "Integrated stand",
+      "Cooling": "—",
+      "OS Support": "—",
+      "Form Factor": "Live System"
+    },
+    "cpu_platform": "Intel Core 12–13th -U/-P",
+    "cooling": "—",
+    "form_factor": "Live System",
+    "applications": "E-commerce live streaming, education/training, corporate launch, multi-camera switching",
+    "datasheet_page": 27,
+    "datasheet_url": "/catalog/datasheets/page-27.png",
+    "image": "/catalog/products/live.jpg",
+    "featured": true,
+    "flags": "",
+    "id": "61e1d8f0-2baa-4efb-85fe-7c5dd806dae2",
+    "created_at": "2026-09-26T10:30:54.740135+00:00"
+  },
+  "related": []
+}
