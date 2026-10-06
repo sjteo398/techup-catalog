@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className="grid place-items-center w-9 h-9 rounded bg-[hsl(var(--navy))] text-white group-hover:bg-[hsl(var(--primary))] transition-colors">
               <Cpu size={18} />
             </span>
-            <span className="font-display font-extrabold text-xl tracking-tight text-slate-900">Tech<span className="text-[hsl(var(--accent))]">Up</span></span>
+            <span className="font-display font-extrabold text-xl tracking-tight text-slate-900">Quartz<span className="text-[hsl(var(--accent))]">ar</span></span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">

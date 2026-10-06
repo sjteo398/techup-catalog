@@ -20,7 +20,7 @@ export default function Sourcing() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="eyebrow text-[hsl(var(--accent))]">How it works</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight">A straightforward B2B sourcing journey</h1>
-          <p className="mt-4 text-slate-300 max-w-2xl">No online checkout — this is an inquiry-driven model built for technical procurement. Here's how buying from TechUp works.</p>
+          <p className="mt-4 text-slate-300 max-w-2xl">No online checkout — this is an inquiry-driven model built for technical procurement. Here's how buying from Quartzar works.</p>
         </div>
       </section>
 

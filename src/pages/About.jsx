@@ -8,7 +8,7 @@ const milestones = [
   ["2009", "Partner manufacturing operations founded — industrial control boards & systems."],
   ["2015", "Expanded OEM/ODM services across panel PCs, box PCs and network appliances."],
   ["2022", "Full in-line QC: AOI, SPI, X-ray, aging, vibration, drop & ESD testing."],
-  ["2026", "TechUp launches as the Malaysian brand front — local accountability, global scale."],
+  ["2026", "Quartzar launches as the Malaysian brand front — local accountability, global scale."],
 ];
 
 const qc = [
@@ -24,9 +24,9 @@ export default function About() {
         <div className="absolute inset-0 grid-texture-dark opacity-50" />
         <img src="/catalog/context/about-support.jpg" alt="" className="absolute right-0 top-0 h-full w-[45%] object-cover opacity-25 hidden lg:block" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="eyebrow text-[hsl(var(--accent))]">About TechUp</p>
+          <p className="eyebrow text-[hsl(var(--accent))]">About Quartzar</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight max-w-3xl">A local industrial computing brand with global manufacturing reach</h1>
-          <p className="mt-5 text-slate-300 max-w-2xl leading-relaxed">TechUp is a Malaysian-registered industrial PC brand. We design and specify rugged computing products — motherboards, box PCs, panel PCs, network appliances and displays — manufactured by vetted OEM/ODM partners with over 16 years of experience. You get one accountable local partner, backed by proven manufacturing scale.</p>
+          <p className="mt-5 text-slate-300 max-w-2xl leading-relaxed">Quartzar is a Malaysian-registered industrial PC brand. We design and specify rugged computing products — motherboards, box PCs, panel PCs, network appliances and displays — manufactured by vetted OEM/ODM partners with over 16 years of experience. You get one accountable local partner, backed by proven manufacturing scale.</p>
         </div>
       </section>
 

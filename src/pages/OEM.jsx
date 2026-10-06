@@ -29,7 +29,7 @@ export default function OEM() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="eyebrow text-[hsl(var(--accent))]">OEM / ODM Services</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight max-w-2xl">Build it your way — custom industrial computing</h1>
-          <p className="mt-4 text-slate-300 max-w-2xl">With 16+ years of OEM/ODM experience across our manufacturing partners, TechUp turns your requirements into production-ready hardware — with local project management and accountability.</p>
+          <p className="mt-4 text-slate-300 max-w-2xl">With 16+ years of OEM/ODM experience across our manufacturing partners, Quartzar turns your requirements into production-ready hardware — with local project management and accountability.</p>
           <Link to="/contact" className="inline-flex items-center gap-2 mt-8 btn-cta px-6 h-12 rounded-md font-semibold">Start a Custom Project <ArrowRight size={18} /></Link>
         </div>
       </section>

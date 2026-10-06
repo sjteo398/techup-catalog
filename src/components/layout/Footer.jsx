@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="col-span-2">
             <Link to="/" className="flex items-center gap-2">
               <span className="grid place-items-center w-9 h-9 rounded bg-[hsl(var(--primary))] text-white"><Cpu size={18} /></span>
-              <span className="font-display font-extrabold text-xl text-white">Tech<span className="text-[hsl(var(--accent))]">Up</span></span>
+              <span className="font-display font-extrabold text-xl text-white">Quartz<span className="text-[hsl(var(--accent))]">ar</span></span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed max-w-sm text-slate-400">
               Malaysian-registered industrial computing brand. Local accountability, backed by vetted OEM/ODM manufacturing scale across Asia.
             </p>
             <div className="mt-5 space-y-2 text-sm">
               <p className="flex items-center gap-2"><MapPin size={15} className="text-[hsl(var(--accent))]" /> Kuala Lumpur, Malaysia <span className="text-slate-500">(placeholder address)</span></p>
-              <p className="flex items-center gap-2"><Mail size={15} className="text-[hsl(var(--accent))]" /> sales@techup.example</p>
+              <p className="flex items-center gap-2"><Mail size={15} className="text-[hsl(var(--accent))]" /> sales@quartzar.example</p>
               <p className="flex items-center gap-2"><Phone size={15} className="text-[hsl(var(--accent))]" /> +60 3-0000 0000 <span className="text-slate-500">(placeholder)</span></p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
-          <p>© {new Date().getFullYear()} TechUp Industrial Computing. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Quartzar Industrial Computing. All rights reserved.</p>
           <p className="flex gap-4"><span>CE</span><span>FCC</span><span>RoHS</span><span className="text-slate-600">(compliance placeholders)</span></p>
         </div>
       </div>

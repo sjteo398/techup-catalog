@@ -47,7 +47,7 @@ export default function HeroScroll() {
               Rugged industrial computing,<br /><span className="text-[hsl(var(--accent))]">engineered</span> & supported in Malaysia.
             </h1>
             <p className="mt-5 text-base sm:text-lg text-slate-300 max-w-xl leading-relaxed">
-              Panel PCs, fanless box PCs, embedded boards and network appliances — specified by TechUp, manufactured by vetted OEM/ODM partners, delivered with responsive local support.
+              Panel PCs, fanless box PCs, embedded boards and network appliances — specified by Quartzar, manufactured by vetted OEM/ODM partners, delivered with responsive local support.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/catalog" data-testid="hero-browse-btn" className="flex items-center gap-2 btn-cta px-6 h-12 rounded-md font-semibold">Browse Products <ArrowRight size={18} /></Link>
@@ -58,7 +58,7 @@ export default function HeroScroll() {
 
         {/* Flagship product */}
         <motion.div style={{ scale, rotate, y }} className="pointer-events-none absolute right-[-6%] bottom-[-6%] w-[62%] max-w-[760px] hidden md:block">
-          <img src={HERO} alt="TechUp flagship industrial box PC" className="w-full drop-shadow-2xl rounded-xl" />
+          <img src={HERO} alt="Quartzar flagship industrial box PC" className="w-full drop-shadow-2xl rounded-xl" />
         </motion.div>
 
         {/* Scroll feature callouts */}

@@ -74,8 +74,8 @@ let contacts = loadJson("contacts.json", [
 
 let currentUser = {
   id: "usr_admin",
-  name: "TechUp Admin",
-  email: "admin@techup.example",
+  name: "Quartzar Admin",
+  email: "admin@quartzar.example",
   role: "admin"
 };
 
@@ -210,8 +210,8 @@ app.post("/api/auth/login", (req, res) => {
   const { username, password } = req.body;
   currentUser = {
     id: "usr_admin",
-    name: username || "TechUp Admin",
-    email: "admin@techup.example",
+    name: username || "Quartzar Admin",
+    email: "admin@quartzar.example",
     role: "admin"
   };
   res.json(currentUser);
@@ -220,8 +220,8 @@ app.post("/api/auth/login", (req, res) => {
 app.post("/api/auth/session", (req, res) => {
   currentUser = {
     id: "usr_admin",
-    name: "TechUp Admin",
-    email: "admin@techup.example",
+    name: "Quartzar Admin",
+    email: "admin@quartzar.example",
     role: "admin"
   };
   res.json(currentUser);

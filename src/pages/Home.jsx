@@ -72,12 +72,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why TechUp */}
+      {/* Why Quartzar */}
       <section className="navy-bg text-white relative overflow-hidden">
         <div className="absolute inset-0 grid-texture-dark opacity-50" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
           <motion.div {...fade}>
-            <p className="eyebrow text-[hsl(var(--accent))]">Why TechUp</p>
+            <p className="eyebrow text-[hsl(var(--accent))]">Why Quartzar</p>
             <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-display font-bold max-w-2xl">Local accountability, global manufacturing scale</h2>
           </motion.div>
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

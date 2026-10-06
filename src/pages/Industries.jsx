@@ -16,7 +16,7 @@ export default function Industries() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="eyebrow text-[hsl(var(--accent))]">Industries & Applications</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight">Find products by your use-case</h1>
-          <p className="mt-4 text-slate-300 max-w-2xl">Technical buyers often know their application before the product category. Browse recommended TechUp products by industry, with the typical requirements for each environment.</p>
+          <p className="mt-4 text-slate-300 max-w-2xl">Technical buyers often know their application before the product category. Browse recommended Quartzar products by industry, with the typical requirements for each environment.</p>
         </div>
       </section>
 
