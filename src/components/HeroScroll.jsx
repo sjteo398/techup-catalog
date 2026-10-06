@@ -57,7 +57,7 @@ export default function HeroScroll() {
         </div>
 
         {/* Flagship product */}
-        <motion.div style={{ scale, rotate, y }} className="pointer-events-none absolute right-[-4%] bottom-[-4%] w-[48%] max-w-[580px] hidden md:block">
+        <motion.div style={{ scale, rotate, y }} className="pointer-events-none absolute right-[-4%] bottom-[-4%] w-[55%] max-w-[670px] hidden md:block">
           <img src={HERO} alt="Quartzar flagship industrial box PC" className="w-full drop-shadow-2xl rounded-xl" />
         </motion.div>
 
