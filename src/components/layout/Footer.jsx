@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="col-span-2">
             <Link to="/" className="flex items-center gap-2">
               <span className="grid place-items-center w-9 h-9 rounded bg-[hsl(var(--primary))] text-white"><Cpu size={18} /></span>
-              <span className="font-display font-extrabold text-xl text-white">Quartz<span className="text-[hsl(var(--accent))]">ar</span></span>
+              <span className="font-bold text-2xl text-white" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Quartzar</span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed max-w-sm text-slate-400">
               Malaysian-registered industrial computing brand. Local accountability, backed by vetted OEM/ODM manufacturing scale across Asia.
