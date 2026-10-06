@@ -47,7 +47,7 @@ export default function Navbar() {
             <span className="grid place-items-center w-9 h-9 rounded bg-[hsl(var(--navy))] text-white group-hover:bg-[hsl(var(--primary))] transition-colors">
               <Cpu size={18} />
             </span>
-            <span className="font-bold text-2xl tracking-tight text-slate-900" style={{ fontFamily: '"Times New Roman", Times, serif' }}>Quartzar</span>
+            <span className="font-bold text-2xl tracking-tight text-[#1E3A8A]" style={{ fontFamily: '"Times New Roman", Times, serif', color: '#1E3A8A' }}>Quartzar</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-6">
