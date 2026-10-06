@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { Menu, X, FileText, GitCompare, ChevronDown, Cpu } from "lucide-react";
+import { Menu, X, FileText, GitCompare, ChevronDown } from "lucide-react";
 import { useStore } from "@/context/StoreContext";
 
 const productMenu = [
@@ -43,10 +43,7 @@ export default function Navbar() {
     <header data-testid="main-navbar" className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm" : "bg-white/70 backdrop-blur-sm"}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" data-testid="logo-link" className="flex items-center gap-2 group">
-            <span className="grid place-items-center w-9 h-9 rounded bg-[hsl(var(--navy))] text-white group-hover:bg-[hsl(var(--primary))] transition-colors">
-              <Cpu size={18} />
-            </span>
+          <Link to="/" data-testid="logo-link" className="flex items-center group">
             <span className="font-bold text-2xl tracking-tight text-[#1E3A8A]" style={{ fontFamily: '"Times New Roman", Times, serif', color: '#1E3A8A' }}>Quartzar</span>
           </Link>
 
