@@ -38,9 +38,11 @@ export default function FilterSidebar({ facets, filters, setFilters }) {
       <div className="flex items-center justify-between">
         <h3 className="font-display font-bold text-lg">Filters</h3>
         {activeCount > 0 && (
-          <button data-testid="clear-filters-btn" onClick={() => setFilters({ form_factor: [], cpu_platform: [], cooling: [] })} className="text-xs text-[hsl(var(--accent))] font-semibold hover:underline">Clear ({activeCount})</button>
+          <button data-testid="clear-filters-btn" onClick={() => setFilters({ series_family: [], series: [], form_factor: [], cpu_platform: [], cooling: [] })} className="text-xs text-[hsl(var(--accent))] font-semibold hover:underline">Clear ({activeCount})</button>
         )}
       </div>
+      <Group title="Series Family" testid="filter-family" options={facets.series_family} selected={filters.series_family || []} onToggle={toggle("series_family")} />
+      <Group title="Series" testid="filter-series" options={facets.series} selected={filters.series || []} onToggle={toggle("series")} />
       <Group title="Form Factor" testid="filter-form" options={facets.form_factor} selected={filters.form_factor || []} onToggle={toggle("form_factor")} />
       <Group title="Cooling" testid="filter-cooling" options={facets.cooling} selected={filters.cooling || []} onToggle={toggle("cooling")} />
       <Group title="CPU Platform" testid="filter-cpu" options={facets.cpu_platform} selected={filters.cpu_platform || []} onToggle={toggle("cpu_platform")} />

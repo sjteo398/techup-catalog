@@ -34,7 +34,7 @@ export default function Home() {
       {/* Trust bar */}
       <section className="bg-white border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-          {[["16+ yrs", "OEM/ODM experience"], ["30,000", "units/month capacity"], ["8,000 m²", "partner factory"], ["50+", "catalog products"]].map(([n, l]) => (
+          {[["16+ yrs", "OEM/ODM experience"], ["30,000", "units/month capacity"], ["8,000 m²", "partner factory"], ["100+", "catalog products"]].map(([n, l]) => (
             <div key={l}>
               <p className="font-display font-extrabold text-2xl sm:text-3xl text-[hsl(var(--navy))]">{n}</p>
               <p className="text-xs text-slate-500 mt-1">{l}</p>

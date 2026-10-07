@@ -3,15 +3,47 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, FileText, GitCompare, ChevronDown } from "lucide-react";
 import { useStore } from "@/context/StoreContext";
 
-const productMenu = [
-  { slug: "motherboards", name: "Industrial Motherboards" },
-  { slug: "embedded-box-pc", name: "Embedded Box PCs" },
-  { slug: "mini-pc", name: "NUC Mini PC Hosts" },
-  { slug: "network-security", name: "Network Security Appliances" },
-  { slug: "panel-pc", name: "Industrial Panel PCs" },
-  { slug: "ops-modules", name: "OPS Display Modules" },
-  { slug: "all-in-one", name: "All-in-One Computers" },
-  { slug: "live-systems", name: "Live Streaming Systems" },
+const seriesFamilies = [
+  {
+    family: "Q-Core Series",
+    slug: "Q-Core",
+    desc: "Industrial Motherboards & SBCs",
+    sub: "Ultra • Lite • Bulk • Compact • Xtreme",
+    to: "/catalog?family=Q-Core",
+    count: 34
+  },
+  {
+    family: "Q-Edge Series",
+    slug: "Q-Edge",
+    desc: "Rugged Fanless Box PCs",
+    sub: "Ultra • Network • Mini • Vision",
+    to: "/catalog?family=Q-Edge",
+    count: 20
+  },
+  {
+    family: "Q-Micro Series",
+    slug: "Q-Micro",
+    desc: "Compact NUC & Mini PC Hosts",
+    sub: "Network • Versatile • Mini",
+    to: "/catalog?family=Q-Micro",
+    count: 26
+  },
+  {
+    family: "Q-Net Series",
+    slug: "Q-Net",
+    desc: "Network Security & Rackmounts",
+    sub: "1U Rackmount • Security Appliances",
+    to: "/catalog?family=Q-Net",
+    count: 14
+  },
+  {
+    family: "Q-Touch Series",
+    slug: "Q-Touch",
+    desc: "Touch Panels, Terminals & OPS",
+    sub: "Xtreme Panels • AIO Terminals • OPS Brain",
+    to: "/catalog?family=Q-Touch",
+    count: 13
+  },
 ];
 
 const nav = [
@@ -56,12 +88,27 @@ export default function Navbar() {
                   </button>
                   {mega && (
                     <div className="absolute left-0 top-full pt-3">
-                      <div className="w-[300px] bg-white rounded-lg border border-slate-200 shadow-xl p-2">
-                        {productMenu.map((c) => (
-                          <Link key={c.slug} to={`/category/${c.slug}`} data-testid={`mega-${c.slug}`} className="block px-3 py-2 rounded-md text-sm text-slate-700 hover:bg-slate-50 hover:text-[hsl(var(--primary))] transition-colors">
-                            {c.name}
+                      <div className="w-[360px] bg-white rounded-xl border border-slate-200 shadow-xl p-3">
+                        <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 px-2 pb-1.5 border-b border-slate-100 mb-1">
+                          Product Series Families
+                        </div>
+                        <div className="space-y-1">
+                          {seriesFamilies.map((f) => (
+                            <Link key={f.slug} to={f.to} data-testid={`mega-${f.slug.toLowerCase()}`} className="block p-2 rounded-lg hover:bg-slate-50 transition-colors group">
+                              <div className="flex items-center justify-between">
+                                <span className="font-semibold text-sm text-slate-900 group-hover:text-[hsl(var(--primary))] transition-colors">{f.family}</span>
+                                <span className="text-[10px] font-mono text-slate-400 bg-slate-100 group-hover:bg-sky-50 group-hover:text-[hsl(var(--primary))] px-2 py-0.5 rounded-full">{f.count} models</span>
+                              </div>
+                              <p className="text-xs text-slate-600 mt-0.5">{f.desc}</p>
+                              <p className="text-[11px] text-slate-400 mt-0.5">{f.sub}</p>
+                            </Link>
+                          ))}
+                        </div>
+                        <div className="pt-2 mt-2 border-t border-slate-100 px-2 flex justify-between items-center">
+                          <Link to="/catalog" className="text-xs font-semibold text-[hsl(var(--primary))] hover:underline">
+                            View All 108 Models →
                           </Link>
-                        ))}
+                        </div>
                       </div>
                     </div>
                   )}
@@ -93,9 +140,12 @@ export default function Navbar() {
       {open && (
         <div data-testid="mobile-menu" className="lg:hidden bg-white border-t border-slate-200 max-h-[80vh] overflow-y-auto">
           <div className="px-4 py-3 space-y-1">
-            <Link to="/catalog" className="block py-2 font-semibold text-slate-900">All Products</Link>
-            {productMenu.map((c) => (
-              <Link key={c.slug} to={`/category/${c.slug}`} className="block py-2 pl-3 text-sm text-slate-600">{c.name}</Link>
+            <Link to="/catalog" className="block py-2 font-semibold text-slate-900">All Products (108 Models)</Link>
+            {seriesFamilies.map((f) => (
+              <Link key={f.slug} to={f.to} className="block py-2 pl-3 text-sm text-slate-600 hover:text-[hsl(var(--primary))]">
+                <span className="font-semibold text-slate-800">{f.family}</span> <span className="text-xs text-slate-400">({f.count})</span>
+                <span className="block text-xs text-slate-500">{f.desc}</span>
+              </Link>
             ))}
             <div className="h-px bg-slate-200 my-2" />
             {nav.filter(n => !n.mega).map((n) => (

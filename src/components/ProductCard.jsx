@@ -15,8 +15,20 @@ export default function ProductCard({ p }) {
         )}
       </Link>
       <div className="p-4 flex-1 flex flex-col">
+        {p.series && (
+          <div className="mb-1.5">
+            <span className="inline-block text-[11px] font-semibold text-[hsl(var(--primary))] bg-sky-50 border border-sky-200/60 px-2 py-0.5 rounded truncate max-w-full" title={p.series}>
+              {p.series}
+            </span>
+          </div>
+        )}
         <Link to={`/product/${p.slug}`}>
-          <h3 className="font-mono font-bold text-slate-900 hover:text-[hsl(var(--primary))] transition-colors">{p.model}</h3>
+          <div className="flex items-baseline gap-1.5 flex-wrap">
+            <h3 className="font-mono font-bold text-slate-900 hover:text-[hsl(var(--primary))] transition-colors text-base">{p.model}</h3>
+            {p.legacy_model && p.legacy_model !== p.model && (
+              <span className="text-xs font-mono text-slate-400">({p.legacy_model})</span>
+            )}
+          </div>
         </Link>
         <p className="mt-1 text-xs text-slate-500">{p.form_factor}</p>
         <p className="mt-2 text-sm text-slate-600 line-clamp-2 flex-1">{p.cpu_platform}</p>

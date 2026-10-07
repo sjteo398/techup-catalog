@@ -25,7 +25,19 @@ const staticApi = {
       let data = await fetchJson("/data/products.json");
       const { params = {} } = config;
       if (params.category) {
-        data = data.filter((p) => p.category === params.category || p.category_slug === params.category);
+        data = data.filter(
+          (p) =>
+            p.category === params.category ||
+            p.category_slug === params.category ||
+            p.series_code?.toLowerCase() === params.category.toLowerCase() ||
+            p.series_family?.toLowerCase().replace(/\s+/g, "-") === params.category.toLowerCase()
+        );
+      }
+      if (params.series) {
+        data = data.filter((p) => p.series === params.series || p.series_code?.toLowerCase() === params.series.toLowerCase());
+      }
+      if (params.series_family) {
+        data = data.filter((p) => p.series_family === params.series_family || p.series_family?.toLowerCase().replace(/\s+/g, "-") === params.series_family.toLowerCase());
       }
       if (params.featured === "true" || params.featured === true) {
         data = data.filter((p) => p.featured === true || p.featured === "true");
@@ -36,7 +48,7 @@ const staticApi = {
       if (params.search) {
         const q = params.search.toLowerCase();
         data = data.filter((p) =>
-          `${p.model} ${p.title} ${p.cpu_platform} ${p.form_factor} ${p.applications}`.toLowerCase().includes(q)
+          `${p.model} ${p.legacy_model || ""} ${p.series || ""} ${p.series_family || ""} ${p.series_code || ""} ${p.title || ""} ${p.cpu_platform || ""} ${p.form_factor || ""} ${p.applications || ""}`.toLowerCase().includes(q)
         );
       }
       return { data };
@@ -44,14 +56,24 @@ const staticApi = {
 
     // 4. Product Detail: /products/:slug
     if (url.startsWith("/products/")) {
-      const slug = url.replace("/products/", "");
+      const slug = url.replace("/products/", "").toLowerCase();
       try {
         const detail = await fetchJson(`/data/products_detail/${slug}.json`);
         return { data: detail };
       } catch {
         const allProducts = await fetchJson("/data/products.json");
-        const found = allProducts.find((p) => p.slug === slug);
-        if (found) return { data: found };
+        const found = allProducts.find(
+          (p) =>
+            p.slug.toLowerCase() === slug ||
+            (p.legacy_model && p.legacy_model.toLowerCase().replace(/[^a-z0-9]/g, "") === slug.replace(/[^a-z0-9]/g, "")) ||
+            (p.model && p.model.toLowerCase().replace(/[^a-z0-9]/g, "") === slug.replace(/[^a-z0-9]/g, ""))
+        );
+        if (found) {
+          const related = allProducts.filter(
+            (p) => (p.series === found.series || p.category === found.category) && p.slug !== found.slug
+          ).slice(0, 4);
+          return { data: { product: found, related } };
+        }
         throw new Error("Product not found");
       }
     }
@@ -93,14 +115,21 @@ const staticApi = {
       const results = await Promise.all(
         slugs.map(async (slug) => {
           try {
-            return await fetchJson(`/data/products_detail/${slug}.json`);
+            const detail = await fetchJson(`/data/products_detail/${slug}.json`);
+            return detail.product || detail;
           } catch {
             const all = await fetchJson("/data/products.json");
-            return all.find((p) => p.slug === slug) || { slug, model: slug };
+            const found = all.find(
+              (p) =>
+                p.slug.toLowerCase() === slug.toLowerCase() ||
+                (p.legacy_model && p.legacy_model.toLowerCase() === slug.toLowerCase()) ||
+                (p.model && p.model.toLowerCase() === slug.toLowerCase())
+            );
+            return found || { slug, model: slug };
           }
         })
       );
-      return { data: results };
+      return { data: results.filter(Boolean) };
     }
 
     // Wizard recommendation

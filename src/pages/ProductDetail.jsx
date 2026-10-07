@@ -29,12 +29,18 @@ export default function ProductDetail() {
   return (
     <Layout>
       <div className="pt-20 border-b border-slate-200 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-2 text-sm text-slate-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center gap-2 text-sm text-slate-500 overflow-x-auto">
           <Link to="/catalog" className="hover:text-[hsl(var(--primary))]">Catalog</Link>
-          <ChevronRight size={14} />
-          <Link to={`/category/${p.category}`} className="hover:text-[hsl(var(--primary))] capitalize">{p.category.replace(/-/g, " ")}</Link>
-          <ChevronRight size={14} />
-          <span className="font-mono text-slate-800">{p.model}</span>
+          <ChevronRight size={14} className="flex-shrink-0" />
+          <Link to={`/category/${p.category}`} className="hover:text-[hsl(var(--primary))] capitalize flex-shrink-0">{p.category.replace(/-/g, " ")}</Link>
+          {p.series && (
+            <>
+              <ChevronRight size={14} className="flex-shrink-0" />
+              <span className="text-slate-600 truncate">{p.series}</span>
+            </>
+          )}
+          <ChevronRight size={14} className="flex-shrink-0" />
+          <span className="font-mono text-slate-800 font-semibold flex-shrink-0">{p.model}</span>
         </div>
       </div>
 
@@ -62,8 +68,27 @@ export default function ProductDetail() {
 
           {/* Info */}
           <div>
-            <p className="eyebrow text-[hsl(var(--accent))] capitalize">{p.form_factor}</p>
-            <h1 className="mt-2 text-3xl sm:text-4xl font-display font-extrabold tracking-tight font-mono">{p.model}</h1>
+            <div className="flex flex-wrap items-center gap-2 mb-2">
+              {p.series && (
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-sky-50 text-[hsl(var(--primary))] border border-sky-200/80">
+                  {p.series}
+                </span>
+              )}
+              {p.cooling === "Fanless" && (
+                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-cyan-50 text-cyan-700 border border-cyan-200/80">
+                  Fanless
+                </span>
+              )}
+              <span className="eyebrow text-slate-500 capitalize">{p.form_factor}</span>
+            </div>
+            <div className="flex items-baseline gap-3 flex-wrap">
+              <h1 className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight font-mono text-slate-900">{p.model}</h1>
+              {p.legacy_model && p.legacy_model !== p.model && (
+                <span className="text-base font-mono text-slate-400">
+                  (formerly <span className="font-semibold text-slate-600">{p.legacy_model}</span>)
+                </span>
+              )}
+            </div>
             <p className="mt-3 text-slate-600">{p.cpu_platform}</p>
             {p.applications && (
               <div className="mt-4">
