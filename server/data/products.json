@@ -1358,12 +1358,17 @@
     "applications": "High-performance edge compute, AI inferencing, industrial automation",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/box_pc.jpg",
+    "image": "/catalog/products/qeu-100-chassis.jpg",
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "2eda4d88-12ab-417b-882f-cf04ff49d9df",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qeu-100-chassis.jpg",
+      "/catalog/products/qeu-100-board.jpg",
+      "/catalog/products/qeu-100-io.jpg"
+    ]
   },
   {
     "model": "QEU-101",
@@ -2212,12 +2217,17 @@
     "applications": "Digital signage player, edge computing node, compact office / retail host",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/mini_pc.jpg",
+    "image": "/catalog/products/qmc-102-chassis.jpg",
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "63b92db7-0b15-4a82-bdbb-8af1357141a4",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qmc-102-chassis.jpg",
+      "/catalog/products/qmc-102-board.jpg",
+      "/catalog/products/qmc-102-io.jpg"
+    ]
   },
   {
     "model": "QMC-103",
