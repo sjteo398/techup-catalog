@@ -4,7 +4,7 @@
     "type": "Catalog",
     "format": "PDF",
     "description": "Complete 2026 industrial computing product catalog — all motherboards, box PCs, panel PCs, appliances, OPS modules and AIO systems.",
-    "url": "/catalog/datasheets/page-04.png",
+    "url": null,
     "flag": "Placeholder — link the full compiled PDF here."
   },
   {
@@ -12,7 +12,7 @@
     "type": "Company",
     "format": "PDF",
     "description": "Quartzar company profile: Malaysian brand, OEM/ODM partnerships, QC process and certifications overview.",
-    "url": "#",
+    "url": null,
     "flag": "Placeholder — upload finalized company profile PDF."
   },
   {
@@ -20,7 +20,7 @@
     "type": "Compliance",
     "format": "PDF",
     "description": "Compliance certificate bundle for Quartzar product lines.",
-    "url": "#",
+    "url": null,
     "flag": "Placeholder — CE/FCC/RoHS certificates pending upload."
   },
   {
@@ -28,7 +28,7 @@
     "type": "OEM",
     "format": "PDF",
     "description": "Overview of customization services: branding, hardware config, enclosures and firmware.",
-    "url": "#",
+    "url": null,
     "flag": "Placeholder."
   }
 ]

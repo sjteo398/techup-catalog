@@ -34,7 +34,9 @@ export default function Resources() {
                   </div>
                   <p className="mt-1 text-sm text-slate-600">{r.description}</p>
                   {r.flag && <p className="mt-1 text-xs text-amber-600">{r.flag}</p>}
-                  <a href={r.url} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[hsl(var(--accent))] hover:underline"><Download size={15} /> Download</a>
+                  <span className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-[hsl(var(--accent))] opacity-40 cursor-not-allowed select-none pointer-events-none" aria-disabled="true">
+                    <Download size={15} /> Download
+                  </span>
                 </div>
               </div>
             );
