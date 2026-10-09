@@ -87,22 +87,34 @@ const staticApi = {
 
     // 5. Sectors list
     if (url === "/sectors") {
-      const data = await fetchJson("/data/sectors.json");
+      const sectors = await fetchJson("/data/sectors.json");
+      const products = await fetchJson("/data/products.json");
+      const activeProducts = products.filter((p) => !p.hidden);
+      const data = sectors.map((s) => {
+        const count = activeProducts.filter((p) => Array.isArray(p.sectors) && p.sectors.includes(s.slug)).length;
+        return { ...s, count };
+      });
       return { data };
     }
 
     // 6. Sector Detail: /sectors/:slug
     if (url.startsWith("/sectors/")) {
       const slug = url.replace("/sectors/", "");
-      try {
-        const detail = await fetchJson(`/data/sectors_detail/${slug}.json`);
-        return { data: detail };
-      } catch {
-        const allSectors = await fetchJson("/data/sectors.json");
-        const found = allSectors.find((s) => s.slug === slug);
-        if (found) return { data: found };
-        throw new Error("Sector not found");
+      const sectors = await fetchJson("/data/sectors.json");
+      const products = await fetchJson("/data/products.json");
+      const activeProducts = products.filter((p) => !p.hidden);
+      const sectorObj = sectors.find((s) => s.slug === slug);
+      if (sectorObj) {
+        const sectorProducts = activeProducts.filter((p) => Array.isArray(p.sectors) && p.sectors.includes(slug));
+        return {
+          data: {
+            sector: sectorObj,
+            products: sectorProducts,
+            count: sectorProducts.length
+          }
+        };
       }
+      throw new Error("Sector not found");
     }
 
     // 7. Resources
