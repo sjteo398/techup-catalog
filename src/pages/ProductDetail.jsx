@@ -23,8 +23,32 @@ export default function ProductDetail() {
   if (!data) return <Layout><div className="min-h-[60vh] grid place-items-center text-slate-400">Loading…</div></Layout>;
 
   const p = data.product;
-  const gallery = [p.image, p.datasheet_url].filter(Boolean);
+  const gallery = p.gallery?.length ? p.gallery : [p.image, p.datasheet_url].filter(Boolean);
   const active = inCompare(p.slug);
+  const [selectedVariantIdx, setSelectedVariantIdx] = useState(0);
+
+  const currentVariant = p.board_variants?.length ? p.board_variants[selectedVariantIdx] : null;
+  const currentModelName = currentVariant ? `${p.model} (${currentVariant.code})` : p.model;
+
+  const handleSelectVariant = (idx, variant) => {
+    setSelectedVariantIdx(idx);
+    if (variant.image) {
+      const matchIdx = gallery.findIndex((g) => g === variant.image);
+      if (matchIdx !== -1) setActiveImg(matchIdx);
+    }
+  };
+
+  const handleAddToRFQ = () => {
+    if (currentVariant) {
+      addToRFQ({
+        ...p,
+        model: currentModelName,
+        note: `Selected Board: ${currentVariant.code} (${currentVariant.cpu})`
+      });
+    } else {
+      addToRFQ(p);
+    }
+  };
 
   return (
     <Layout>
@@ -49,15 +73,17 @@ export default function ProductDetail() {
           {/* Gallery */}
           <div>
             <div className="rounded-xl border border-slate-200 bg-slate-50 overflow-hidden aspect-[4/3]">
-              <img src={gallery[activeImg]} alt={p.model} className="w-full h-full object-contain" data-testid="product-main-image" />
+              <img src={gallery[activeImg] || p.image} alt={p.model} className="w-full h-full object-contain" data-testid="product-main-image" />
             </div>
-            <div className="mt-3 flex gap-3">
-              {gallery.map((g, i) => (
-                <button key={i} onClick={() => setActiveImg(i)} className={`w-20 h-20 rounded-lg border-2 overflow-hidden bg-white ${activeImg === i ? "border-[hsl(var(--primary))]" : "border-slate-200"}`}>
-                  <img src={g} alt="" className="w-full h-full object-contain" />
-                </button>
-              ))}
-            </div>
+            {gallery.length > 1 && (
+              <div className="mt-3 flex gap-3 overflow-x-auto pb-1">
+                {gallery.map((g, i) => (
+                  <button key={i} onClick={() => setActiveImg(i)} className={`w-20 h-20 rounded-lg border-2 flex-shrink-0 overflow-hidden bg-white ${activeImg === i ? "border-[hsl(var(--primary))]" : "border-slate-200"}`}>
+                    <img src={g} alt="" className="w-full h-full object-contain" />
+                  </button>
+                ))}
+              </div>
+            )}
             {p.flags && (
               <div className="mt-4 flex items-start gap-2 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
                 <AlertTriangle size={15} className="flex-shrink-0 mt-0.5" />
@@ -82,17 +108,48 @@ export default function ProductDetail() {
               <span className="eyebrow text-slate-500 capitalize">{p.form_factor}</span>
             </div>
             <div className="flex items-baseline gap-3 flex-wrap">
-              <h1 className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight font-mono text-slate-900">{p.model}</h1>
+              <h1 className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight font-mono text-slate-900">
+                {currentModelName}
+              </h1>
               {p.legacy_model && p.legacy_model !== p.model && (
                 <span className="text-base font-mono text-slate-400">
                   (formerly <span className="font-semibold text-slate-600">{p.legacy_model}</span>)
                 </span>
               )}
             </div>
-            <p className="mt-3 text-slate-600">{p.cpu_platform}</p>
+
+            {/* Interactive Motherboard / CPU Variant Selector */}
+            {p.board_variants?.length > 0 && (
+              <div className="mt-5 p-4 rounded-xl bg-slate-50 border border-slate-200">
+                <label className="eyebrow text-slate-600 font-bold block mb-2">Select Board / CPU Configuration</label>
+                <div className="space-y-2">
+                  {p.board_variants.map((v, idx) => (
+                    <button
+                      key={v.code}
+                      onClick={() => handleSelectVariant(idx, v)}
+                      className={`w-full text-left p-3 rounded-lg border transition-all flex items-start justify-between gap-3 ${
+                        selectedVariantIdx === idx
+                          ? "border-[hsl(var(--primary))] bg-white shadow-sm ring-2 ring-[hsl(var(--primary))]/30 text-slate-900"
+                          : "border-slate-200 bg-white/60 hover:bg-white text-slate-700 hover:border-slate-300"
+                      }`}
+                    >
+                      <div>
+                        <span className="font-mono font-bold text-sm block text-[hsl(var(--navy))]">{v.code} — {v.name}</span>
+                        <span className="text-xs text-slate-500 block mt-0.5">{v.desc}</span>
+                      </div>
+                      <span className={`text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 ${selectedVariantIdx === idx ? "bg-sky-100 text-[hsl(var(--primary))]" : "bg-slate-100 text-slate-500"}`}>
+                        {selectedVariantIdx === idx ? "Selected" : "Select"}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            <p className="mt-4 text-slate-600 font-medium">{currentVariant ? currentVariant.cpu : p.cpu_platform}</p>
             {p.applications && (
               <div className="mt-4">
-                <p className="eyebrow text-slate-500 mb-2">Typical applications</p>
+                <p className="eyebrow text-slate-500 mb-1">Typical applications</p>
                 <p className="text-sm text-slate-700">{p.applications}</p>
               </div>
             )}
@@ -104,7 +161,7 @@ export default function ProductDetail() {
               </div>
             )}
             <div className="mt-6 flex flex-wrap gap-3">
-              <button data-testid="detail-add-rfq" onClick={() => addToRFQ(p)} className="flex items-center gap-2 btn-cta px-6 h-12 rounded-md font-semibold"><Plus size={18} /> Add to RFQ</button>
+              <button data-testid="detail-add-rfq" onClick={handleAddToRFQ} className="flex items-center gap-2 btn-cta px-6 h-12 rounded-md font-semibold"><Plus size={18} /> Add to RFQ</button>
               <button data-testid="detail-compare" onClick={() => toggleCompare(p)} className={`flex items-center gap-2 px-5 h-12 rounded-md font-semibold border transition-colors ${active ? "bg-[hsl(var(--navy))] text-white border-[hsl(var(--navy))]" : "border-slate-300 hover:border-[hsl(var(--primary))]"}`}>
                 {active ? <Check size={18} /> : <GitCompare size={18} />} {active ? "Comparing" : "Compare"}
               </button>

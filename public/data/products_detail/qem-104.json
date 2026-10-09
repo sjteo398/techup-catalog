@@ -63,7 +63,30 @@
     "featured": false,
     "flags": "Configurable Q-BOX-E10 chassis with 3 motherboard options (AD600Z3AW, RP7003AW, UT1003AW).",
     "id": "6c938948-f3ff-4813-9022-5f9f6464dde5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "board_variants": [
+      {
+        "code": "AD600Z3AW",
+        "name": "Intel Core Ultra 100H / 100U",
+        "desc": "High-performance AI Edge Compute option with Dual DDR5 & NVMe",
+        "cpu": "Intel Core Ultra 100H / 100U",
+        "image": "/catalog/products/qem-104-ad600.jpg"
+      },
+      {
+        "code": "RP7003AW",
+        "name": "Intel 12th/13th/14th Gen Core i7/i5/i3",
+        "desc": "Heavy industrial control & multi-task automation option",
+        "cpu": "Intel 12th / 13th / 14th Gen Core i7 / i5 / i3 & Celeron",
+        "image": "/catalog/products/qem-104-rp700.jpg"
+      },
+      {
+        "code": "UT1003AW",
+        "name": "Intel Alder Lake-N N100 / N97",
+        "desc": "Ultra low-power fanless edge gateway option",
+        "cpu": "Intel Alder Lake-N N100 / N97",
+        "image": "/catalog/products/qem-104-ut100.jpg"
+      }
+    ]
   },
   "related": []
 }

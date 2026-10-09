@@ -30,11 +30,25 @@
     "applications": "High-performance edge compute, AI inferencing, industrial automation",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/box_pc.jpg",
+    "image": "/catalog/products/qeu-100-chassis.jpg",
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "2eda4d88-12ab-417b-882f-cf04ff49d9df",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "gallery": [
+      "/catalog/products/qeu-100-chassis.jpg",
+      "/catalog/products/qeu-100-board.jpg",
+      "/catalog/products/qeu-100-io.jpg"
+    ],
+    "board_variants": [
+      {
+        "code": "UT100NU (N-BOX-S9 Board)",
+        "name": "Intel Core Ultra / Alder Lake-N",
+        "desc": "Premium Fanless Box PC Host with UT100NU NANO Motherboard",
+        "cpu": "Intel Core Ultra / Alder Lake-N",
+        "image": "/catalog/products/qeu-100-chassis.jpg"
+      }
+    ]
   },
   "related": [
     {
