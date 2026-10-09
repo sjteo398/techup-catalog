@@ -30,14 +30,14 @@
     "applications": "Digital signage player, edge computing node, compact office / retail host",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/qmc-102-chassis.jpg",
+    "image": "/catalog/products/qmc-102-board.jpg",
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "63b92db7-0b15-4a82-bdbb-8af1357141a4",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
     "gallery": [
-      "/catalog/products/qmc-102-chassis.jpg",
       "/catalog/products/qmc-102-board.jpg",
+      "/catalog/products/qmc-102-chassis.jpg",
       "/catalog/products/qmc-102-io.jpg"
     ],
     "board_variants": [
@@ -46,7 +46,7 @@
         "name": "Intel Alder Lake-N N100 / N97",
         "desc": "Compact NUC Mini PC Host with AD30NU Industrial Motherboard",
         "cpu": "Intel Alder Lake-N N100 / N97",
-        "image": "/catalog/products/qmc-102-chassis.jpg"
+        "image": "/catalog/products/qmc-102-board.jpg"
       }
     ]
   },
