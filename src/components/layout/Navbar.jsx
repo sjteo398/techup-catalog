@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Menu, X, FileText, GitCompare, ChevronDown } from "lucide-react";
 import { useStore } from "@/context/StoreContext";
+import api from "@/lib/apiClient";
 
 const seriesFamilies = [
   {
@@ -10,7 +11,6 @@ const seriesFamilies = [
     desc: "Industrial Motherboards & SBCs",
     sub: "Ultra • Lite • Bulk • Compact • Xtreme",
     to: "/catalog?family=Q-Core",
-    count: 34
   },
   {
     family: "Q-Edge Series",
@@ -18,7 +18,6 @@ const seriesFamilies = [
     desc: "Rugged Fanless Box PCs",
     sub: "Ultra • Network • Mini • Vision",
     to: "/catalog?family=Q-Edge",
-    count: 20
   },
   {
     family: "Q-Micro Series",
@@ -26,7 +25,6 @@ const seriesFamilies = [
     desc: "Compact NUC & Mini PC Hosts",
     sub: "Network • Versatile • Mini",
     to: "/catalog?family=Q-Micro",
-    count: 26
   },
   {
     family: "Q-Net Series",
@@ -34,7 +32,6 @@ const seriesFamilies = [
     desc: "Network Security & Rackmounts",
     sub: "1U Rackmount • Security Appliances",
     to: "/catalog?family=Q-Net",
-    count: 14
   },
   {
     family: "Q-Touch Series",
@@ -42,7 +39,6 @@ const seriesFamilies = [
     desc: "Touch Panels, Terminals & OPS",
     sub: "Xtreme Panels • AIO Terminals • OPS Brain",
     to: "/catalog?family=Q-Touch",
-    count: 13
   },
 ];
 
@@ -60,6 +56,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [mega, setMega] = useState(false);
+  const [products, setProducts] = useState([]);
   const { rfqCount, setRfqOpen, compare } = useStore();
   const navigate = useNavigate();
   const loc = useLocation();
@@ -70,6 +67,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   useEffect(() => { setOpen(false); setMega(false); }, [loc.pathname]);
+
+  useEffect(() => {
+    api.get("/products").then((r) => setProducts(r.data || [])).catch(() => {});
+  }, []);
+
+  const getFamilyCount = (slug) => {
+    return products.filter((p) => p.series_family === slug || p.series_family?.toLowerCase().replace(/\s+/g, "-") === slug.toLowerCase()).length;
+  };
+
+  const totalActiveCount = products.length;
 
   return (
     <header data-testid="main-navbar" className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled ? "bg-white/90 backdrop-blur-md border-b border-slate-200 shadow-sm" : "bg-white/70 backdrop-blur-sm"}`}>
@@ -97,7 +104,7 @@ export default function Navbar() {
                             <Link key={f.slug} to={f.to} data-testid={`mega-${f.slug.toLowerCase()}`} className="block p-2 rounded-lg hover:bg-slate-50 transition-colors group">
                               <div className="flex items-center justify-between">
                                 <span className="font-semibold text-sm text-slate-900 group-hover:text-[hsl(var(--primary))] transition-colors">{f.family}</span>
-                                <span className="text-[10px] font-mono text-slate-400 bg-slate-100 group-hover:bg-sky-50 group-hover:text-[hsl(var(--primary))] px-2 py-0.5 rounded-full">{f.count} models</span>
+                                <span className="text-[10px] font-mono text-slate-400 bg-slate-100 group-hover:bg-sky-50 group-hover:text-[hsl(var(--primary))] px-2 py-0.5 rounded-full">{getFamilyCount(f.slug)} models</span>
                               </div>
                               <p className="text-xs text-slate-600 mt-0.5">{f.desc}</p>
                               <p className="text-[11px] text-slate-400 mt-0.5">{f.sub}</p>
@@ -106,7 +113,7 @@ export default function Navbar() {
                         </div>
                         <div className="pt-2 mt-2 border-t border-slate-100 px-2 flex justify-between items-center">
                           <Link to="/catalog" className="text-xs font-semibold text-[hsl(var(--primary))] hover:underline">
-                            View All 108 Models →
+                            View All {totalActiveCount > 0 ? totalActiveCount : 13} Models →
                           </Link>
                         </div>
                       </div>

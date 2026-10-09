@@ -34,7 +34,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "a577db97-c182-4fe2-b709-c402f443d056",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QCU-101",
@@ -71,7 +72,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "b8f4075b-da6e-417f-b235-1e746169931b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCU-102",
@@ -108,7 +110,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "4caa7419-d8e7-4a14-9f18-310cf2cd6126",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCU-103",
@@ -145,7 +148,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "61129aeb-37f8-4210-839d-1669adb70d8c",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCU-104",
@@ -182,7 +186,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "476ff4d8-66bb-40ea-a966-9e3cede57742",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCU-105",
@@ -219,7 +224,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "466bb52e-f572-4202-98f8-468352e5bb93",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-100",
@@ -256,7 +262,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "9ed3e79c-011f-49a7-8b47-cd6f9cb9a1a0",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-101",
@@ -293,7 +300,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "1b626536-febc-4817-89df-2cd255c0a2e7",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-102",
@@ -330,7 +338,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "7c49af19-c908-4272-b3bd-d2434781f4c7",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-103",
@@ -367,7 +376,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "16c5851d-dae8-48c5-96b9-254de874b28c",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-104",
@@ -404,7 +414,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "3737104f-9877-40f2-8af3-2eae8ea37448",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCL-105",
@@ -441,7 +452,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Lite: Power-Efficient. Official Quartzar industrial catalog specification.",
     "id": "8e74aff6-b333-4a03-94e9-2a3663730fae",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCB-100",
@@ -478,7 +490,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Bulk: High-Capacity Storage. Official Quartzar industrial catalog specification.",
     "id": "1e5c2988-d8e4-4858-be7e-73f2d784746a",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCB-101",
@@ -515,7 +528,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Bulk: High-Capacity Storage. Official Quartzar industrial catalog specification.",
     "id": "af3e4fa6-13ad-4a6b-a49f-40c1771c22de",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCB-102",
@@ -552,7 +566,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Bulk: High-Capacity Storage. Official Quartzar industrial catalog specification.",
     "id": "3c87c828-867f-4864-933f-3baf32bf563f",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-100",
@@ -589,7 +604,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "a6caa2f4-6950-4007-8ef5-2dbe5bd0df22",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QCC-101",
@@ -626,7 +642,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "ce6659df-47ca-497f-a4ae-6bf9f9240067",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-102",
@@ -663,7 +680,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "c83769e4-c2f0-40bd-948a-4b28896509d1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-103",
@@ -700,7 +718,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "1316b10d-23f8-439d-be30-5e2263bb6a17",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-104",
@@ -737,7 +756,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "5cde1812-b514-4167-8580-f4bd4595b946",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-105",
@@ -774,7 +794,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "8599497e-32b9-44aa-8319-42ffb65f7ac2",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-106",
@@ -811,7 +832,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "b5368768-f2c7-41c4-909e-e03bf8711bea",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-107",
@@ -848,7 +870,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "f76488a6-11f6-49cc-86e4-7042796d6abf",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-108",
@@ -885,7 +908,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "e341614f-27dc-4560-a6a4-8fa75fd8e3c8",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-109",
@@ -922,7 +946,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "5e8f68e2-df95-4806-b8f5-c723514ed872",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-110",
@@ -959,7 +984,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "8938b07b-aefd-472b-9b3a-e403bb0c40dc",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCC-111",
@@ -996,7 +1022,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "5c3ad19d-3a20-4d26-a142-07b614373243",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QCC-112",
@@ -1033,7 +1060,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "8b3275ac-5ffd-42e7-9f28-a5338522ef48",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QCC-113",
@@ -1070,7 +1098,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "9564c1d5-6745-45fd-853f-aef2eb96d601",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QCX-100",
@@ -1107,7 +1136,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "2f7e976c-db6d-46ec-b2dc-36870a6c0eb1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCX-101",
@@ -1144,7 +1174,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "0a361ea9-91bb-43cf-a9fc-5582cba2e9c0",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCX-102",
@@ -1181,7 +1212,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "0a4c234a-ef82-49a0-b36b-9318ed11ae2b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCX-103",
@@ -1218,7 +1250,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "1a787c54-2c3b-47f5-ac44-5499ce08ee70",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QCX-104",
@@ -1255,7 +1288,8 @@
     "featured": false,
     "flags": "Allocated to Q-Core Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "f000d060-b0ac-470b-8290-15413f5d5805",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEU-100",
@@ -1292,7 +1326,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "2eda4d88-12ab-417b-882f-cf04ff49d9df",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QEU-101",
@@ -1329,7 +1364,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "7b4c8a9c-91c1-47c6-a880-19a4ddf757a8",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QEU-102",
@@ -1366,7 +1402,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "e82101ef-cb5c-4d79-9463-99b07160107b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEN-100",
@@ -1403,7 +1440,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "56710f49-6fd9-4a6e-91ac-b9669e6bf135",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QEN-101",
@@ -1440,7 +1478,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "ffc22b81-08f2-4305-a20a-19b1c236db73",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEN-102",
@@ -1477,7 +1516,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "5465ee6d-c31a-41e2-ae75-4c2d2c3e4078",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEN-103",
@@ -1514,7 +1554,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "b7b760a9-19e4-41fb-8682-fbc420aafc57",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEN-104",
@@ -1551,7 +1592,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "8686b87a-fe0d-465b-8e59-8b642df635b8",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-100",
@@ -1588,7 +1630,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "3d385129-ed7c-4c9a-937e-cbbf368e6f14",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-101",
@@ -1625,7 +1668,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "25f42fc7-2dd1-47c8-8d05-ca79fd753483",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-102",
@@ -1662,7 +1706,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "5348124e-6d0e-4195-852a-c0dfa4b7c392",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-103",
@@ -1699,7 +1744,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "8633e80d-2d08-469c-b20e-4c6d8539a15b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-104",
@@ -1736,7 +1782,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "6c938948-f3ff-4813-9022-5f9f6464dde5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QEM-105",
@@ -1773,7 +1820,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "268f65c7-92e1-4ad7-8e25-eed6a4d1c171",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-106",
@@ -1810,7 +1858,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "23bd7c90-f2d7-4f76-8b5d-aef720be1028",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEM-107",
@@ -1847,7 +1896,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Mini: Compact. Official Quartzar industrial catalog specification.",
     "id": "957e76cf-464b-4ca7-b780-1c118b9cc7ac",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEV-100",
@@ -1884,7 +1934,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Vision: Vision Controllers. Official Quartzar industrial catalog specification.",
     "id": "25ff1e88-7ef9-4f39-984c-dd77b3ba0de3",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEV-101",
@@ -1921,7 +1972,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Vision: Vision Controllers. Official Quartzar industrial catalog specification.",
     "id": "d6281157-a968-4fcd-b88c-d0615dbd14aa",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEV-102",
@@ -1958,7 +2010,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Vision: Vision Controllers. Official Quartzar industrial catalog specification.",
     "id": "3009e92e-4e62-4712-a4d7-c5f4e4be71b1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QEV-103",
@@ -1995,7 +2048,8 @@
     "featured": false,
     "flags": "Allocated to Q-Edge Vision: Vision Controllers. Official Quartzar industrial catalog specification.",
     "id": "30aeb63d-5cbb-4e1f-a069-a586087cf3d6",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-100",
@@ -2032,7 +2086,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "53a2ff6b-6e01-415b-b7a1-4204f791303c",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-101",
@@ -2069,7 +2124,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "eb1b89d2-1a3d-4b27-aadb-489dbe0947f8",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-102",
@@ -2106,7 +2162,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "63b92db7-0b15-4a82-bdbb-8af1357141a4",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QMC-103",
@@ -2143,7 +2200,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "c5e08e97-07d0-47aa-91b0-396498236f0b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-104",
@@ -2180,7 +2238,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "4fbe92ce-c185-4e5c-a2e6-5e18fe90b0f1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-105",
@@ -2217,7 +2276,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "8f71ba36-6f74-4ccc-a6b6-31d66d01c53a",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-106",
@@ -2254,7 +2314,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "cf781a13-f89e-4edf-8a6b-06e74998542c",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-107",
@@ -2291,7 +2352,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "ee5bc229-29aa-4e2d-976c-d44d8fa54db2",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-108",
@@ -2328,7 +2390,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "5e2aafb1-b3ad-4767-823e-a1d7c185b726",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-109",
@@ -2365,7 +2428,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "e89dba98-d8a2-42ae-92a6-c5831fddcd9f",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-110",
@@ -2402,7 +2466,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "28a0b109-ffaa-4503-a010-6962304202f5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-111",
@@ -2439,7 +2504,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "ba0d2460-bb0a-46a1-a671-560e0bc16b4f",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMC-112",
@@ -2476,7 +2542,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Network: Connectivity. Official Quartzar industrial catalog specification.",
     "id": "7c5ed65a-6542-4953-ab57-e20d19869852",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMV-100",
@@ -2513,7 +2580,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Versatile: General Purpose. Official Quartzar industrial catalog specification.",
     "id": "24435f21-ac7d-490e-b483-e8992e99a16b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMV-101",
@@ -2550,7 +2618,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Versatile: General Purpose. Official Quartzar industrial catalog specification.",
     "id": "7c3479f5-5024-4344-8dd5-f07ababeff6d",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMV-102",
@@ -2587,7 +2656,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Versatile: General Purpose. Official Quartzar industrial catalog specification.",
     "id": "93c066f7-2747-4f6c-bf52-cdb8801f235b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMV-103",
@@ -2624,7 +2694,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Versatile: General Purpose. Official Quartzar industrial catalog specification.",
     "id": "ca3e1f38-a0ee-480e-b102-f79a0bfc71d9",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMV-104",
@@ -2661,7 +2732,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Versatile: General Purpose. Official Quartzar industrial catalog specification.",
     "id": "c536191b-fff6-4ba4-9f29-54e193c5ad4a",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-100",
@@ -2698,7 +2770,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "1ac2b397-13e0-4468-9348-af74bc0046f6",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-101",
@@ -2735,7 +2808,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "1cca5944-b173-44cc-b77c-b99c44f4d102",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-102",
@@ -2772,7 +2846,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "cc599f5b-cf87-4558-af52-24717fa826b2",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-103",
@@ -2809,7 +2884,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "ede8d9c6-9b95-4528-b6f1-e926deb1b254",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-104",
@@ -2846,7 +2922,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "d9cb2b50-f83b-4d3c-9878-205499cc4879",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-105",
@@ -2883,7 +2960,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "6d2e12c6-6f57-45ec-87e9-e9a891803abf",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-106",
@@ -2920,7 +2998,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "12ca53b8-30b1-4469-85c6-b3c72ffedaf0",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QMM-107",
@@ -2957,7 +3036,8 @@
     "featured": false,
     "flags": "Allocated to Q-Micro Mini: Ready-to-deploy. Official Quartzar industrial catalog specification.",
     "id": "d417396f-b9be-4ac1-a920-221f15025a04",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-100",
@@ -2994,7 +3074,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "37ec400c-6348-4b46-a055-c657cccc1dbc",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-101",
@@ -3031,7 +3112,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "03186c45-4c67-4ef0-9f15-acc43db65cd1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QNR-102",
@@ -3068,7 +3150,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "0c597176-dd79-49c5-a32c-17f2f0a8ba42",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-103",
@@ -3105,7 +3188,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "3522b771-b091-435e-a62d-a3d6184ff1f5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-104",
@@ -3142,7 +3226,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "757435f2-1dcc-4923-9ff3-f5e7c30b6843",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-105",
@@ -3179,7 +3264,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "2666686e-0b31-424c-8dd7-2831383b2fa0",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-106",
@@ -3216,7 +3302,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "813bcb3f-90e2-479e-b683-688c24d1b645",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNR-107",
@@ -3253,7 +3340,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "6d30f11c-c1e0-4eb0-8fc0-15cd23a819c5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNS-100",
@@ -3290,7 +3378,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "5508f2e7-c65e-487c-a96e-086ba3b54e44",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNS-101",
@@ -3327,7 +3416,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "959bb0fb-16f8-4406-9622-62fc49f535c5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QNS-102",
@@ -3364,7 +3454,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "b7e53b6e-57e3-44ed-a596-b78583ab4c5f",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNS-103",
@@ -3401,7 +3492,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "365fb0e8-fcb1-4877-9eb9-b9794f52bc5b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNS-104",
@@ -3438,7 +3530,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "4be01aaf-3271-44a1-a19a-b14550e498b5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QNS-105",
@@ -3475,7 +3568,8 @@
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "af8b70a1-bd3e-4185-b9bf-2ca82eedbb3c",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTX-100",
@@ -3512,7 +3606,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "61efb9cb-a70a-4ea5-a2dc-fdb7d38202ef",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTX-101",
@@ -3549,7 +3644,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "0a71a19e-15e9-460a-879c-b1f05de2077d",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": false
   },
   {
     "model": "QTX-102",
@@ -3586,7 +3682,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "78461189-dd43-497e-aabf-790cecbaefa1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTX-103",
@@ -3623,7 +3720,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "c01ad6de-71e2-4ed4-936a-eab177400b44",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTT-100",
@@ -3660,7 +3758,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Terminal: All-in-one. Official Quartzar industrial catalog specification.",
     "id": "bf5d40f6-8467-4acd-970a-15d69bd938b4",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTT-101",
@@ -3697,7 +3796,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Terminal: All-in-one. Official Quartzar industrial catalog specification.",
     "id": "6a03f295-d108-4495-8019-93584ae751e2",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-100",
@@ -3734,7 +3834,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "7a4a6ef6-f0f3-4001-9e9e-e8beac4774de",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-101",
@@ -3771,7 +3872,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "92fda4f7-1a10-4a99-b662-5838296c8979",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-102",
@@ -3808,7 +3910,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "677a1151-bf9c-4c42-be1f-2acba182446b",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-103",
@@ -3845,7 +3948,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "053b022b-8e70-4dad-8bd6-a8fe2774c731",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-104",
@@ -3882,7 +3986,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "a70969f5-4fe4-437e-86b4-fe15f8dddee1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-105",
@@ -3919,7 +4024,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "99fe3188-26a0-4f1a-ba37-73899f3884ce",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "QTB-106",
@@ -3956,7 +4062,8 @@
     "featured": false,
     "flags": "Allocated to Q-Touch Brain: OPS. Official Quartzar industrial catalog specification.",
     "id": "74dcc0a6-fc35-4c0d-95cf-c02f76a0fba1",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "hidden": true
   },
   {
     "model": "LIVE-A1",
@@ -3993,6 +4100,7 @@
     "series": "Live Studio: Streaming Deck",
     "series_family": "Live Studio",
     "series_code": "LIVE",
-    "legacy_model": "LIVE-A1"
+    "legacy_model": "LIVE-A1",
+    "hidden": true
   }
 ]

@@ -10,7 +10,13 @@ const staticApi = {
   get: async (url, config = {}) => {
     // 1. Categories
     if (url === "/categories") {
-      const data = await fetchJson("/data/categories.json");
+      const categories = await fetchJson("/data/categories.json");
+      const products = await fetchJson("/data/products.json");
+      const activeProducts = products.filter((p) => !p.hidden);
+      const data = categories.map((c) => {
+        const count = activeProducts.filter((p) => p.category === c.slug).length;
+        return { ...c, count };
+      });
       return { data };
     }
 
@@ -23,6 +29,7 @@ const staticApi = {
     // 3. Products list with parameters
     if (url === "/products") {
       let data = await fetchJson("/data/products.json");
+      data = data.filter((p) => !p.hidden);
       const { params = {} } = config;
       if (params.category) {
         data = data.filter(
