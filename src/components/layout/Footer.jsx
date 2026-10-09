@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="mt-5 space-y-2 text-sm">
               <p className="flex items-center gap-2"><MapPin size={15} className="text-[hsl(var(--accent))]" /> Kuala Lumpur, Malaysia <span className="text-slate-500">(placeholder address)</span></p>
               <p className="flex items-center gap-2"><Mail size={15} className="text-[hsl(var(--accent))]" /> sales@quartzar.example</p>
-              <p className="flex items-center gap-2"><Phone size={15} className="text-[hsl(var(--accent))]" /> +60 3-0000 0000 <span className="text-slate-500">(placeholder)</span></p>
+              <p className="flex items-center gap-2"><Phone size={15} className="text-[hsl(var(--accent))]" /> +60 12-681 8462</p>
             </div>
           </div>
           <div>
