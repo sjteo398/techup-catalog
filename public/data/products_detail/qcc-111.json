@@ -30,11 +30,19 @@
     "applications": "AGVs, robotics, embedded machinery, space-constrained industrial controllers",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcc-111-main.png",
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "5c3ad19d-3a20-4d26-a142-07b614373243",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "gallery": [
+      "/catalog/products/qcc-111-1.png",
+      "/catalog/products/qcc-111-2.png",
+      "/catalog/products/qcc-111-3.png",
+      "/catalog/products/qcc-111-4.png",
+      "/catalog/products/qcc-111-5.png",
+      "/catalog/products/qcc-111-6.png"
+    ]
   },
   "related": [
     {

@@ -30,11 +30,20 @@
     "applications": "Branch office security gateway, soft router, VPN concentrator, firewall appliance",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/rackmount.jpg",
+    "image": "/catalog/products/qns-101-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "959bb0fb-16f8-4406-9622-62fc49f535c5",
-    "created_at": "2026-10-07T00:00:00.000000+00:00"
+    "created_at": "2026-10-07T00:00:00.000000+00:00",
+    "gallery": [
+      "/catalog/products/qns-101-1.jpg",
+      "/catalog/products/qns-101-2.jpg",
+      "/catalog/products/qns-101-3.jpg",
+      "/catalog/products/qns-101-4.jpg",
+      "/catalog/products/qns-101-5.jpg",
+      "/catalog/products/qns-101-6.png",
+      "/catalog/products/qns-101-7.jpg"
+    ]
   },
   "related": [
     {

@@ -30,12 +30,19 @@
     "applications": "High-performance edge compute, AI inferencing, industrial automation",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcu-100-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Core Ultra: High Performance. Official Quartzar industrial catalog specification.",
     "id": "a577db97-c182-4fe2-b709-c402f443d056",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qcu-100-1.jpg",
+      "/catalog/products/qcu-100-2.jpg",
+      "/catalog/products/qcu-100-3.jpg",
+      "/catalog/products/qcu-100-4.jpg",
+      "/catalog/products/qcu-100-5.jpg"
+    ]
   },
   {
     "model": "QCU-101",
@@ -600,12 +607,19 @@
     "applications": "AGVs, robotics, embedded machinery, space-constrained industrial controllers",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcc-100-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "a6caa2f4-6950-4007-8ef5-2dbe5bd0df22",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qcc-100-1.jpg",
+      "/catalog/products/qcc-100-2.jpg",
+      "/catalog/products/qcc-100-3.jpg",
+      "/catalog/products/qcc-100-4.jpg",
+      "/catalog/products/qcc-100-5.jpg"
+    ]
   },
   {
     "model": "QCC-101",
@@ -1018,12 +1032,20 @@
     "applications": "AGVs, robotics, embedded machinery, space-constrained industrial controllers",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcc-111-main.png",
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "5c3ad19d-3a20-4d26-a142-07b614373243",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qcc-111-1.png",
+      "/catalog/products/qcc-111-2.png",
+      "/catalog/products/qcc-111-3.png",
+      "/catalog/products/qcc-111-4.png",
+      "/catalog/products/qcc-111-5.png",
+      "/catalog/products/qcc-111-6.png"
+    ]
   },
   {
     "model": "QCC-112",
@@ -1056,12 +1078,19 @@
     "applications": "AGVs, robotics, embedded machinery, space-constrained industrial controllers",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcc-112-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "8b3275ac-5ffd-42e7-9f28-a5338522ef48",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qcc-112-1.jpg",
+      "/catalog/products/qcc-112-2.jpg",
+      "/catalog/products/qcc-112-3.jpg",
+      "/catalog/products/qcc-112-4.jpg",
+      "/catalog/products/qcc-112-5.jpg"
+    ]
   },
   {
     "model": "QCC-113",
@@ -1094,12 +1123,19 @@
     "applications": "AGVs, robotics, embedded machinery, space-constrained industrial controllers",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/motherboard.jpg",
+    "image": "/catalog/products/qcc-113-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Core Compact: Small Size. Official Quartzar industrial catalog specification.",
     "id": "9564c1d5-6745-45fd-853f-aef2eb96d601",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qcc-113-1.jpg",
+      "/catalog/products/qcc-113-2.jpg",
+      "/catalog/products/qcc-113-3.jpg",
+      "/catalog/products/qcc-113-4.jpg",
+      "/catalog/products/qcc-113-5.jpg"
+    ]
   },
   {
     "model": "QCX-100",
@@ -1360,12 +1396,21 @@
     "applications": "High-performance edge compute, AI inferencing, industrial automation",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/box_pc.jpg",
+    "image": "/catalog/products/qeu-101-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Edge Ultra: Premium Fan-less. Official Quartzar industrial catalog specification.",
     "id": "7b4c8a9c-91c1-47c6-a880-19a4ddf757a8",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qeu-101-1.jpg",
+      "/catalog/products/qeu-101-2.jpg",
+      "/catalog/products/qeu-101-3.jpg",
+      "/catalog/products/qeu-101-4.jpg",
+      "/catalog/products/qeu-101-5.jpg",
+      "/catalog/products/qeu-101-6.jpg",
+      "/catalog/products/qeu-101-7.jpg"
+    ]
   },
   {
     "model": "QEU-102",
@@ -1436,12 +1481,21 @@
     "applications": "Cableless rugged industrial computing, roadside units, vibration-prone mobile machinery",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/box_pc.jpg",
+    "image": "/catalog/products/qen-100-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Edge Network: Cableless & Multi-LAN. Official Quartzar industrial catalog specification.",
     "id": "56710f49-6fd9-4a6e-91ac-b9669e6bf135",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qen-100-1.jpg",
+      "/catalog/products/qen-100-2.jpg",
+      "/catalog/products/qen-100-3.jpg",
+      "/catalog/products/qen-100-4.jpg",
+      "/catalog/products/qen-100-5.jpg",
+      "/catalog/products/qen-100-6.png",
+      "/catalog/products/qen-100-7.jpg"
+    ]
   },
   {
     "model": "QEN-101",
@@ -3108,12 +3162,20 @@
     "applications": "Enterprise firewall, network gateway, UTM security, SD-WAN routing",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/rackmount.jpg",
+    "image": "/catalog/products/qnr-101-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Net Rackmount: Ready-to-Deploy. Official Quartzar industrial catalog specification.",
     "id": "03186c45-4c67-4ef0-9f15-acc43db65cd1",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qnr-101-1.jpg",
+      "/catalog/products/qnr-101-2.jpg",
+      "/catalog/products/qnr-101-3.jpg",
+      "/catalog/products/qnr-101-4.jpg",
+      "/catalog/products/qnr-101-5.jpg",
+      "/catalog/products/qnr-101-6.png"
+    ]
   },
   {
     "model": "QNR-102",
@@ -3412,12 +3474,21 @@
     "applications": "Branch office security gateway, soft router, VPN concentrator, firewall appliance",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/rackmount.jpg",
+    "image": "/catalog/products/qns-101-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Net Security: Security. Official Quartzar industrial catalog specification.",
     "id": "959bb0fb-16f8-4406-9622-62fc49f535c5",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qns-101-1.jpg",
+      "/catalog/products/qns-101-2.jpg",
+      "/catalog/products/qns-101-3.jpg",
+      "/catalog/products/qns-101-4.jpg",
+      "/catalog/products/qns-101-5.jpg",
+      "/catalog/products/qns-101-6.png",
+      "/catalog/products/qns-101-7.jpg"
+    ]
   },
   {
     "model": "QNS-102",
@@ -3640,12 +3711,20 @@
     "applications": "HMI production line interface, cleanroom terminal, outdoor machinery control",
     "datasheet_page": null,
     "datasheet_url": null,
-    "image": "/catalog/products/panel_pc.jpg",
+    "image": "/catalog/products/qtx-101-main.jpg",
     "featured": false,
     "flags": "Allocated to Q-Touch Xtreme: Heavy Duty. Official Quartzar industrial catalog specification.",
     "id": "0a71a19e-15e9-460a-879c-b1f05de2077d",
     "created_at": "2026-10-07T00:00:00.000000+00:00",
-    "hidden": false
+    "hidden": false,
+    "gallery": [
+      "/catalog/products/qtx-101-1.jpg",
+      "/catalog/products/qtx-101-2.jpg",
+      "/catalog/products/qtx-101-3.jpg",
+      "/catalog/products/qtx-101-4.jpg",
+      "/catalog/products/qtx-101-5.jpg",
+      "/catalog/products/qtx-101-6.png"
+    ]
   },
   {
     "model": "QTX-102",
