@@ -64,25 +64,29 @@ const staticApi = {
     // 4. Product Detail: /products/:slug
     if (url.startsWith("/products/")) {
       const slug = url.replace("/products/", "").toLowerCase();
+      const allProducts = await fetchJson("/data/products.json");
+      const activeProducts = allProducts.filter((p) => !p.hidden);
+
+      let productObj = null;
       try {
         const detail = await fetchJson(`/data/products_detail/${slug}.json`);
-        return { data: detail };
+        productObj = detail.product || detail;
       } catch {
-        const allProducts = await fetchJson("/data/products.json");
-        const found = allProducts.find(
+        productObj = allProducts.find(
           (p) =>
             p.slug.toLowerCase() === slug ||
             (p.legacy_model && p.legacy_model.toLowerCase().replace(/[^a-z0-9]/g, "") === slug.replace(/[^a-z0-9]/g, "")) ||
             (p.model && p.model.toLowerCase().replace(/[^a-z0-9]/g, "") === slug.replace(/[^a-z0-9]/g, ""))
         );
-        if (found) {
-          const related = allProducts.filter(
-            (p) => (p.series === found.series || p.category === found.category) && p.slug !== found.slug
-          ).slice(0, 4);
-          return { data: { product: found, related } };
-        }
-        throw new Error("Product not found");
       }
+
+      if (productObj) {
+        const related = activeProducts.filter(
+          (p) => (p.series === productObj.series || p.category === productObj.category) && p.slug !== productObj.slug
+        ).slice(0, 4);
+        return { data: { product: productObj, related } };
+      }
+      throw new Error("Product not found");
     }
 
     // 5. Sectors list

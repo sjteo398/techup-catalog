@@ -11,21 +11,21 @@ export default function ProductDetail() {
   const { slug } = useParams();
   const [data, setData] = useState(null);
   const [activeImg, setActiveImg] = useState(0);
+  const [selectedVariantIdx, setSelectedVariantIdx] = useState(0);
   const { addToRFQ, toggleCompare, inCompare } = useStore();
 
   useEffect(() => {
-    setData(null); setActiveImg(0);
+    setData(null); setActiveImg(0); setSelectedVariantIdx(0);
     api.get(`/products/${slug}`).then((r) => setData(r.data)).catch(() => setData("error"));
     window.scrollTo(0, 0);
   }, [slug]);
 
   if (data === "error") return <Layout><div className="min-h-[60vh] grid place-items-center">Product not found. <Link to="/catalog" className="text-[hsl(var(--accent))] ml-2">Back to catalog</Link></div></Layout>;
-  if (!data) return <Layout><div className="min-h-[60vh] grid place-items-center text-slate-400">Loading…</div></Layout>;
+  if (!data || !data.product) return <Layout><div className="min-h-[60vh] grid place-items-center text-slate-400">Loading…</div></Layout>;
 
   const p = data.product;
   const gallery = p.gallery?.length ? p.gallery : [p.image, p.datasheet_url].filter(Boolean);
   const active = inCompare(p.slug);
-  const [selectedVariantIdx, setSelectedVariantIdx] = useState(0);
 
   const currentVariant = p.board_variants?.length ? p.board_variants[selectedVariantIdx] : null;
   const currentModelName = currentVariant ? `${p.model} (${currentVariant.code})` : p.model;
