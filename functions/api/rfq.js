@@ -37,13 +37,20 @@ export async function onRequestPost(context) {
     // Check if Cloudflare Email Routing binding (env.EMAIL or env.SELECTION) is active
     const emailBinding = env.EMAIL || env.SELECTION;
     if (emailBinding) {
-      const emailMessage = new EmailMessage(
-        fromEmail,
-        toEmail,
-        emailBody
-      );
-      await emailBinding.send(emailMessage);
-      console.log("RFQ Email sent via Cloudflare Email Routing to:", toEmail);
+      try {
+        const subject = `New RFQ Quote Request from ${company || contact_name || "Website Buyer"}`;
+        let mimeMessage = `From: Quartzar RFQ <${fromEmail}>\r\n`;
+        mimeMessage += `To: <${toEmail}>\r\n`;
+        mimeMessage += `Subject: ${subject}\r\n`;
+        mimeMessage += `Content-Type: text/plain; charset=utf-8\r\n\r\n`;
+        mimeMessage += emailBody;
+
+        const emailMessage = new EmailMessage(fromEmail, toEmail, mimeMessage);
+        await emailBinding.send(emailMessage);
+        console.log("RFQ Email sent via Cloudflare Email Routing to:", toEmail);
+      } catch (sendErr) {
+        console.error("Error sending RFQ email via binding:", sendErr);
+      }
     } else {
       // Log for preview / dev environments without active binding
       console.log("RFQ Submission logged (Cloudflare Email binding not attached):", emailBody);

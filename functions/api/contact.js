@@ -20,13 +20,20 @@ export async function onRequestPost(context) {
 
     const emailBinding = env.EMAIL || env.SELECTION;
     if (emailBinding) {
-      const emailMessage = new EmailMessage(
-        fromEmail,
-        toEmail,
-        emailBody
-      );
-      await emailBinding.send(emailMessage);
-      console.log("Contact Email sent via Cloudflare Email Routing to:", toEmail);
+      try {
+        const mailSubject = subject || `New Contact Inquiry from ${name || company || "Website User"}`;
+        let mimeMessage = `From: Quartzar Contact <${fromEmail}>\r\n`;
+        mimeMessage += `To: <${toEmail}>\r\n`;
+        mimeMessage += `Subject: ${mailSubject}\r\n`;
+        mimeMessage += `Content-Type: text/plain; charset=utf-8\r\n\r\n`;
+        mimeMessage += emailBody;
+
+        const emailMessage = new EmailMessage(fromEmail, toEmail, mimeMessage);
+        await emailBinding.send(emailMessage);
+        console.log("Contact Email sent via Cloudflare Email Routing to:", toEmail);
+      } catch (sendErr) {
+        console.error("Error sending Contact email via binding:", sendErr);
+      }
     } else {
       console.log("Contact Inquiry logged (Cloudflare Email binding not attached):", emailBody);
     }
