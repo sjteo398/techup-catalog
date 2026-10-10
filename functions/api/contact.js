@@ -6,8 +6,8 @@ export async function onRequestPost(context) {
     const data = await request.json();
     const { name, company, email, phone, subject, message } = data;
 
-    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "sales@quartzar.example";
-    const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.example";
+    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "sheanjiun.teo@quartzar.com.my";
+    const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.com.my";
 
     let emailBody = `New Contact Form Inquiry Received via Website\n`;
     emailBody += `==============================================\n\n`;
