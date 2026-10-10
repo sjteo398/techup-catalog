@@ -7,30 +7,26 @@ const journey = [
   {
     icon: Layers,
     title: "Design & Architecture",
-    subtitle: "Consultation, Diagnostic & Ecosystem Blueprint",
-    body: "We define your upgrade goals and conduct an in-depth analysis of current operations to pinpoint bottlenecks. We design a custom hardware and software ecosystem tailored to your spatial needs, establishing performance baselines, ROI metrics, and targeted risk mitigation.",
-    highlights: ["Vision & Consultation", "Systems Diagnostic", "Ecosystem Blueprint", "Performance & Risk Mitigation"]
+    subtitle: "Consultation & Ecosystem Blueprint",
+    body: "We analyze your operational bottlenecks, define upgrade goals, and design a custom hardware and software ecosystem tailored to your spatial needs and ROI targets."
   },
   {
     icon: Search,
     title: "Strategic Sourcing",
-    subtitle: "Direct OEM Relationships & Component Vetting",
-    body: "We bypass local intermediaries to secure authentic hardware and direct-from-factory pricing from premier technology hubs. Every component—from processing power to sensor accuracy—undergoes component-level vetting for enterprise-grade reliability and scalable procurement.",
-    highlights: ["Direct OEM Pricing", "Component-Level Vetting", "Cost-to-Performance Optimization", "Scalable Procurement"]
+    subtitle: "Direct OEM Relationships & Vetting",
+    body: "We bypass local intermediaries to secure authentic hardware and direct-from-factory pricing while conducting component-level vetting for enterprise-grade reliability."
   },
   {
     icon: Wrench,
     title: "Custom Integration & Packaging",
-    subtitle: "Hardware-Software Sync & Bespoke Assembly",
-    body: "We bridge physical hardware and operational software by managing data pipelines, API integrations, and protocols. Technical groundwork (firmware setup, component calibration, network config) is executed prior to deployment, packaged into modular, ready-to-deploy units with localized interfaces.",
-    highlights: ["Hardware-Software Sync", "System Pre-Configuration", "Bespoke Modular Assembly", "Interface Localisation"]
+    subtitle: "Hardware-Software Sync & Assembly",
+    body: "We bridge hardware and software via API pipelines, pre-configure firmware and network settings, and assemble modular, ready-to-deploy units with localized interfaces."
   },
   {
     icon: CheckCircle2,
     title: "Implementation & Deployment",
-    subtitle: "Field-First Installation & Live Integration",
-    body: "Operating with a field-first approach, our dedicated team personally manages physical installation directly within your environment. We bring newly sourced technology online smoothly within your active workflow, concluding with a complete operational handover and documentation.",
-    highlights: ["Transition Mapping", "Field-First Installation", "Live Workflow Integration", "Operational Handover"]
+    subtitle: "Field-First Installation & Handover",
+    body: "Our dedicated team personally manages on-site physical installation and live workflow integration, concluding with complete operational handover and technical documentation."
   }
 ];
 
@@ -66,17 +62,6 @@ export default function Sourcing() {
                 <h3 className="font-display font-bold text-xl text-slate-900">{j.title}</h3>
                 <p className="text-xs font-semibold text-[hsl(var(--primary))] mt-0.5 mb-3">{j.subtitle}</p>
                 <p className="text-sm text-slate-600 leading-relaxed">{j.body}</p>
-              </div>
-
-              <div className="mt-6 pt-4 border-t border-slate-100">
-                <div className="grid grid-cols-2 gap-2">
-                  {j.highlights.map((h) => (
-                    <span key={h} className="text-[11px] font-medium text-slate-600 bg-slate-50 border border-slate-200/70 rounded px-2.5 py-1 flex items-center gap-1.5 truncate">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[hsl(var(--primary))] flex-shrink-0" />
-                      {h}
-                    </span>
-                  ))}
-                </div>
               </div>
             </div>
           ))}
