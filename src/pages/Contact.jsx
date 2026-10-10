@@ -15,11 +15,18 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) { toast.error("Please fill name, email and message."); return; }
     setBusy(true);
     try {
-      await api.post("/contact", form);
+      const res = await api.post("/contact", form);
+      if (res?.data?.success === false) {
+        toast.error(res.data.message || "Failed to send message.");
+        return;
+      }
       setSent(true);
       toast.success("Message sent — we'll be in touch shortly.");
-    } catch { toast.error("Something went wrong. Please try again."); }
-    finally { setBusy(false); }
+    } catch (err) {
+      toast.error(err?.response?.data?.message || "Something went wrong. Please try again.");
+    } finally {
+      setBusy(false);
+    }
   };
 
   return (

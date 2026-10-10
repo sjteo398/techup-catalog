@@ -72,7 +72,9 @@ export async function onRequestPost(context) {
       }
     } else if (serviceBinding && typeof serviceBinding.fetch === 'function') {
       try {
+        // Spread data FIRST so workerPayload MIME fields are NOT overwritten by data.message
         const workerPayload = {
+          ...data,
           to: toEmail,
           toEmail: toEmail,
           recipient: toEmail,
@@ -89,8 +91,7 @@ export async function onRequestPost(context) {
           rawEmail: mimeMessage,
           content: mimeMessage,
           plainText: emailBody,
-          replyTo: email,
-          ...data
+          replyTo: email
         };
 
         const workerRes = await serviceBinding.fetch("https://email-worker/send", {

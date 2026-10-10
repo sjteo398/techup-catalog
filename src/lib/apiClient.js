@@ -167,23 +167,11 @@ const staticApi = {
 
     // Form submissions (RFQ / Contact) -> Send to Cloudflare Function /api/rfq or /api/contact
     if (url === "/rfq" || url === "/api/rfq") {
-      try {
-        const res = await axios.post("/api/rfq", body, config);
-        return res;
-      } catch {
-        // Fallback static success response for local/offline preview
-        return { data: { success: true, message: "Quote request submitted successfully!" } };
-      }
+      return axios.post("/api/rfq", body, config);
     }
 
     if (url === "/contact" || url === "/api/contact") {
-      try {
-        const res = await axios.post("/api/contact", body, config);
-        return res;
-      } catch {
-        // Fallback static success response for local/offline preview
-        return { data: { success: true, message: "Message submitted successfully!" } };
-      }
+      return axios.post("/api/contact", body, config);
     }
 
     return axios.post(url, body, config);
