@@ -16,8 +16,8 @@ export default function Footer() {
               Malaysian-registered industrial computing brand. Local accountability, backed by vetted OEM/ODM manufacturing scale across Asia.
             </p>
             <div className="mt-5 space-y-2 text-sm">
-              <p className="flex items-center gap-2"><MapPin size={15} className="text-[hsl(var(--accent))]" /> Kuala Lumpur, Malaysia <span className="text-slate-500">(placeholder address)</span></p>
-              <p className="flex items-center gap-2"><Mail size={15} className="text-[hsl(var(--accent))]" /> sales@quartzar.example</p>
+              <p className="flex items-center gap-2"><MapPin size={15} className="text-[hsl(var(--accent))]" /> Kuala Lumpur, Malaysia</p>
+              <p className="flex items-center gap-2"><Mail size={15} className="text-[hsl(var(--accent))]" /> sales@quartzar.com.my</p>
               <p className="flex items-center gap-2"><Phone size={15} className="text-[hsl(var(--accent))]" /> +60 12-681 8462</p>
             </div>
           </div>
@@ -51,7 +51,7 @@ export default function Footer() {
         </div>
         <div className="mt-12 pt-6 border-t border-white/10 flex flex-col sm:flex-row justify-between gap-3 text-xs text-slate-500">
           <p>© {new Date().getFullYear()} Quartzar Industrial Computing. All rights reserved.</p>
-          <p className="flex gap-4"><span>CE</span><span>FCC</span><span>RoHS</span><span className="text-slate-600">(compliance placeholders)</span></p>
+          <p className="flex gap-4"><span>CE</span><span>FCC</span><span>RoHS</span><span>ISO 9001</span></p>
         </div>
       </div>
     </footer>

@@ -35,7 +35,7 @@ export default function Contact() {
 
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid lg:grid-cols-3 gap-10">
         <div className="space-y-6">
-          {[[MapPin, "Office", "Kuala Lumpur, Malaysia (placeholder address)"], [Mail, "Email", "sales@quartzar.example"], [Phone, "Phone", "+60 12-681 8462"], [MessageCircle, "WhatsApp", "Tap the green button for instant chat"]].map(([Icon, k, v]) => (
+          {[[MapPin, "Office", "Kuala Lumpur, Malaysia"], [Mail, "Email", "sales@quartzar.com.my"], [Phone, "Phone", "+60 12-681 8462"], [MessageCircle, "WhatsApp", "Tap the green button for instant chat"]].map(([Icon, k, v]) => (
             <div key={k} className="flex items-start gap-3">
               <span className="grid place-items-center w-11 h-11 rounded-lg bg-slate-100 text-[hsl(var(--primary))] flex-shrink-0"><Icon size={20} /></span>
               <div><p className="eyebrow text-slate-400">{k}</p><p className="mt-1 text-slate-800 font-medium text-sm">{v}</p></div>
