@@ -25,12 +25,8 @@ export default function ProductCard({ p }) {
         <Link to={`/product/${p.slug}`}>
           <div className="flex items-baseline gap-1.5 flex-wrap">
             <h3 className="font-mono font-bold text-slate-900 hover:text-[hsl(var(--primary))] transition-colors text-base">{p.model}</h3>
-            {p.legacy_model && p.legacy_model !== p.model && (
-              <span className="text-xs font-mono text-slate-400">({p.legacy_model})</span>
-            )}
           </div>
         </Link>
-        <p className="mt-1 text-xs text-slate-500">{p.form_factor}</p>
         <p className="mt-2 text-sm text-slate-600 line-clamp-2 flex-1">{p.cpu_platform}</p>
         <div className="mt-3 flex items-center gap-2">
           <button data-testid={`add-rfq-${p.slug}`} onClick={() => addToRFQ(p)} className="flex-1 flex items-center justify-center gap-1 h-9 rounded-md btn-cta text-xs font-semibold">

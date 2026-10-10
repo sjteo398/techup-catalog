@@ -105,17 +105,11 @@ export default function ProductDetail() {
                   Fanless
                 </span>
               )}
-              <span className="eyebrow text-slate-500 capitalize">{p.form_factor}</span>
             </div>
             <div className="flex items-baseline gap-3 flex-wrap">
               <h1 className="text-3xl sm:text-4xl font-display font-extrabold tracking-tight font-mono text-slate-900">
                 {currentModelName}
               </h1>
-              {p.legacy_model && p.legacy_model !== p.model && (
-                <span className="text-base font-mono text-slate-400">
-                  (formerly <span className="font-semibold text-slate-600">{p.legacy_model}</span>)
-                </span>
-              )}
             </div>
 
             {/* Interactive Motherboard / CPU Variant Selector */}
