@@ -31,20 +31,32 @@ export async function onRequestPost(context) {
         const emailMessage = new EmailMessage(fromEmail, toEmail, mimeMessage);
         await emailBinding.send(emailMessage);
         console.log("Contact Email sent via Cloudflare Email Routing to:", toEmail);
+        return new Response(
+          JSON.stringify({ success: true, message: "Message submitted successfully!" }),
+          { status: 200, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+        );
       } catch (sendErr) {
         console.error("Error sending Contact email via binding:", sendErr);
+        return new Response(
+          JSON.stringify({
+            success: false,
+            message: `Cloudflare Email Error: ${sendErr.message || String(sendErr)}`,
+            hint: "Check if fromEmail is an address on your domain and toEmail is a verified destination in Cloudflare Email Routing."
+          }),
+          { status: 500, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+        );
       }
     } else {
       console.log("Contact Inquiry logged (Cloudflare Email binding not attached):", emailBody);
+      return new Response(
+        JSON.stringify({
+          success: false,
+          message: "Cloudflare Email binding (EMAIL) is not attached to this Pages project.",
+          hint: "Go to Workers & Pages -> techup-catalog -> Settings -> Functions -> Email Routing Bindings and add binding named EMAIL."
+        }),
+        { status: 400, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+      );
     }
-
-    return new Response(
-      JSON.stringify({ success: true, message: "Message submitted successfully!" }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
-      }
-    );
   } catch (error) {
     return new Response(
       JSON.stringify({ success: false, message: error.message }),
