@@ -18,13 +18,15 @@ export async function onRequestPost(context) {
     emailBody += `Subject: ${subject || "General Inquiry"}\n\n`;
     emailBody += `Message:\n${message || "N/A"}\n`;
 
-    if (env.EMAIL) {
+    const emailBinding = env.EMAIL || env.SELECTION;
+    if (emailBinding) {
       const emailMessage = new EmailMessage(
         fromEmail,
         toEmail,
         emailBody
       );
-      await env.EMAIL.send(emailMessage);
+      await emailBinding.send(emailMessage);
+      console.log("Contact Email sent via Cloudflare Email Routing to:", toEmail);
     } else {
       console.log("Contact Inquiry logged (Cloudflare Email binding not attached):", emailBody);
     }

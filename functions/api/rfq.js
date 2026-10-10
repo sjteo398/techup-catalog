@@ -34,14 +34,16 @@ export async function onRequestPost(context) {
       emailBody += `\nAdditional Message:\n${message}\n`;
     }
 
-    // Check if Cloudflare Email Routing binding (env.SELECTION or env.EMAIL) is active
-    if (env.EMAIL) {
+    // Check if Cloudflare Email Routing binding (env.EMAIL or env.SELECTION) is active
+    const emailBinding = env.EMAIL || env.SELECTION;
+    if (emailBinding) {
       const emailMessage = new EmailMessage(
         fromEmail,
         toEmail,
         emailBody
       );
-      await env.EMAIL.send(emailMessage);
+      await emailBinding.send(emailMessage);
+      console.log("RFQ Email sent via Cloudflare Email Routing to:", toEmail);
     } else {
       // Log for preview / dev environments without active binding
       console.log("RFQ Submission logged (Cloudflare Email binding not attached):", emailBody);
