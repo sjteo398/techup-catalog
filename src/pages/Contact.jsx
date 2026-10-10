@@ -8,11 +8,29 @@ export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", company: "", phone: "", subject: "", message: "" });
   const [sent, setSent] = useState(false);
   const [busy, setBusy] = useState(false);
-  const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
+
+  const setField = (field, maxLen, stripPattern) => (e) => {
+    let val = e.target.value;
+    if (stripPattern) {
+      val = val.replace(stripPattern, "");
+    }
+    if (maxLen && val.length > maxLen) {
+      val = val.slice(0, maxLen);
+    }
+    setForm((prev) => ({ ...prev, [field]: val }));
+  };
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.name || !form.email || !form.message) { toast.error("Please fill name, email and message."); return; }
+    if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
+      toast.error("Please fill in Name, Email, and Message.");
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email.trim())) {
+      toast.error("Please enter a valid email address (e.g. name@company.com).");
+      return;
+    }
     setBusy(true);
     try {
       const res = await api.post("/contact", form);
@@ -28,6 +46,14 @@ export default function Contact() {
       setBusy(false);
     }
   };
+
+  const fieldsConfig = [
+    { key: "name", label: "Name *", type: "text", max: 80, strip: /[^a-zA-Z\s\.\-']/g, placeholder: "e.g. Sarah Lee", colSpan: false },
+    { key: "email", label: "Email *", type: "email", max: 100, placeholder: "e.g. sarah@company.com", colSpan: false },
+    { key: "company", label: "Company", type: "text", max: 100, placeholder: "e.g. Tech Solutions Sdn Bhd", colSpan: false },
+    { key: "phone", label: "Phone", type: "tel", max: 25, strip: /[^\d\+\-\s\(\)]/g, placeholder: "e.g. +60 12-345 6789", colSpan: false },
+    { key: "subject", label: "Subject", type: "text", max: 120, placeholder: "e.g. Technical enquiry / Partnership", colSpan: true }
+  ];
 
   return (
     <Layout>
@@ -59,15 +85,37 @@ export default function Contact() {
             </div>
           ) : (
             <form onSubmit={submit} className="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 grid sm:grid-cols-2 gap-4" data-testid="contact-form">
-              {[["name", "Name *", "text"], ["email", "Email *", "email"], ["company", "Company", "text"], ["phone", "Phone", "text"], ["subject", "Subject", "text"]].map(([k, l, t]) => (
-                <div key={k} className={k === "subject" ? "sm:col-span-2" : ""}>
-                  <label className="eyebrow text-slate-500">{l}</label>
-                  <input data-testid={`contact-${k}`} type={t} value={form[k]} onChange={set(k)} className="mt-1 w-full h-11 px-3 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none" />
+              {fieldsConfig.map(({ key, label, type, max, strip, placeholder, colSpan }) => (
+                <div key={key} className={colSpan ? "sm:col-span-2" : ""}>
+                  <div className="flex justify-between items-center">
+                    <label className="eyebrow text-slate-500">{label}</label>
+                    <span className="text-[10px] text-slate-400 font-mono">{form[key]?.length || 0}/{max}</span>
+                  </div>
+                  <input
+                    data-testid={`contact-${key}`}
+                    type={type}
+                    value={form[key]}
+                    maxLength={max}
+                    placeholder={placeholder}
+                    onChange={setField(key, max, strip)}
+                    className="mt-1 w-full h-11 px-3 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none"
+                  />
                 </div>
               ))}
               <div className="sm:col-span-2">
-                <label className="eyebrow text-slate-500">Message *</label>
-                <textarea data-testid="contact-message" value={form.message} onChange={set("message")} rows={5} className="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none" />
+                <div className="flex justify-between items-center">
+                  <label className="eyebrow text-slate-500">Message *</label>
+                  <span className="text-[10px] text-slate-400 font-mono">{form.message.length}/1000</span>
+                </div>
+                <textarea
+                  data-testid="contact-message"
+                  value={form.message}
+                  maxLength={1000}
+                  placeholder="Type your message here (max 1,000 characters)…"
+                  onChange={setField("message", 1000)}
+                  rows={5}
+                  className="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none"
+                />
               </div>
               <button data-testid="contact-submit" disabled={busy} className="sm:col-span-2 flex items-center justify-center gap-2 h-12 btn-cta rounded-md font-semibold disabled:opacity-60">
                 <Send size={18} /> {busy ? "Sending…" : "Send Message"}

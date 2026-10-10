@@ -11,21 +11,53 @@ export default function RFQDrawer() {
   const [done, setDone] = useState(false);
   const [form, setForm] = useState({ company: "", contact_name: "", email: "", phone: "", country: "", target_price: "", delivery_location: "", timeline: "", message: "" });
 
-  const set = (k) => (e) => setForm({ ...form, [k]: e.target.value });
+  const setField = (field, maxLen, stripPattern) => (e) => {
+    let val = e.target.value;
+    if (stripPattern) {
+      val = val.replace(stripPattern, "");
+    }
+    if (maxLen && val.length > maxLen) {
+      val = val.slice(0, maxLen);
+    }
+    setForm((prev) => ({ ...prev, [field]: val }));
+  };
 
   const submit = async (e) => {
     e.preventDefault();
-    if (!form.company || !form.contact_name || !form.email) { toast.error("Please fill company, name and email."); return; }
+    if (!form.company.trim() || !form.contact_name.trim() || !form.email.trim()) {
+      toast.error("Please fill in Company, Name, and Email.");
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(form.email.trim())) {
+      toast.error("Please enter a valid email address (e.g. name@company.com).");
+      return;
+    }
     setSubmitting(true);
     try {
       await api.post("/rfq", { ...form, items: rfqItems.map((i) => ({ model: i.model, slug: i.slug, quantity: i.quantity, note: i.note })) });
-      setDone(true); clearRFQ();
+      setDone(true);
+      clearRFQ();
       toast.success("RFQ submitted — our team will respond shortly.");
-    } catch { toast.error("Something went wrong. Please try again."); }
-    finally { setSubmitting(false); }
+    } catch (err) {
+      toast.error(err?.response?.data?.message || "Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   if (!rfqOpen) return null;
+
+  const fieldsConfig = [
+    { key: "company", label: "Company name *", type: "text", max: 100, placeholder: "e.g. Quartzar Solutions Sdn Bhd" },
+    { key: "contact_name", label: "Your name *", type: "text", max: 80, strip: /[^a-zA-Z\s\.\-']/g, placeholder: "e.g. Alex Wong" },
+    { key: "email", label: "Email *", type: "email", max: 100, placeholder: "e.g. alex@company.com" },
+    { key: "phone", label: "Phone", type: "tel", max: 25, strip: /[^\d\+\-\s\(\)]/g, placeholder: "e.g. +60 12-345 6789" },
+    { key: "country", label: "Country", type: "text", max: 60, placeholder: "e.g. Malaysia" },
+    { key: "delivery_location", label: "Delivery location", type: "text", max: 120, placeholder: "e.g. Penang, Malaysia" },
+    { key: "timeline", label: "Required timeline", type: "text", max: 60, placeholder: "e.g. 2–3 weeks / Q3 2026" },
+    { key: "target_price", label: "Target price (optional)", type: "text", max: 50, placeholder: "e.g. MYR 15,000" }
+  ];
 
   return (
     <div className="fixed inset-0 z-[60]" data-testid="rfq-drawer">
@@ -66,7 +98,7 @@ export default function RFQDrawer() {
                       <button onClick={() => updateQty(i.slug, i.quantity + 1)} className="w-7 h-7 grid place-items-center rounded border border-slate-200 hover:bg-slate-50"><Plus size={13} /></button>
                       <button onClick={() => removeRFQ(i.slug)} className="ml-auto w-7 h-7 grid place-items-center rounded text-red-500 hover:bg-red-50"><Trash2 size={14} /></button>
                     </div>
-                    <input value={i.note} onChange={(e) => updateNote(i.slug, e.target.value)} placeholder="Note (config, memory, storage…)" className="mt-2 w-full h-8 px-2 text-xs border border-slate-200 rounded" />
+                    <input value={i.note} maxLength={200} onChange={(e) => updateNote(i.slug, e.target.value)} placeholder="Note (config, memory, storage…)" className="mt-2 w-full h-8 px-2 text-xs border border-slate-200 rounded" />
                   </div>
                 </div>
               ))}
@@ -78,15 +110,37 @@ export default function RFQDrawer() {
         ) : (
           <form onSubmit={submit} className="flex-1 overflow-y-auto p-4 space-y-3">
             <p className="text-xs text-slate-500 mono">{rfqItems.length} line item(s) attached to this request.</p>
-            {[["company","Company name *"],["contact_name","Your name *"],["email","Email *"],["phone","Phone"],["country","Country"],["delivery_location","Delivery location"],["timeline","Required timeline"],["target_price","Target price (optional)"]].map(([k,l]) => (
-              <div key={k}>
-                <label className="eyebrow text-slate-500">{l}</label>
-                <input data-testid={`rfq-field-${k}`} value={form[k]} onChange={set(k)} className="mt-1 w-full h-10 px-3 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none" />
+            {fieldsConfig.map(({ key, label, type, max, strip, placeholder }) => (
+              <div key={key}>
+                <div className="flex justify-between items-center">
+                  <label className="eyebrow text-slate-500">{label}</label>
+                  <span className="text-[10px] text-slate-400 font-mono">{form[key]?.length || 0}/{max}</span>
+                </div>
+                <input
+                  data-testid={`rfq-field-${key}`}
+                  type={type}
+                  value={form[key]}
+                  maxLength={max}
+                  placeholder={placeholder}
+                  onChange={setField(key, max, strip)}
+                  className="mt-1 w-full h-10 px-3 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none"
+                />
               </div>
             ))}
             <div>
-              <label className="eyebrow text-slate-500">Message</label>
-              <textarea data-testid="rfq-field-message" value={form.message} onChange={set("message")} rows={3} className="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none" />
+              <div className="flex justify-between items-center">
+                <label className="eyebrow text-slate-500">Message</label>
+                <span className="text-[10px] text-slate-400 font-mono">{form.message.length}/1000</span>
+              </div>
+              <textarea
+                data-testid="rfq-field-message"
+                value={form.message}
+                maxLength={1000}
+                placeholder="Include specific configuration, certifications, or custom IO requirements…"
+                onChange={setField("message", 1000)}
+                rows={3}
+                className="mt-1 w-full px-3 py-2 border border-slate-300 rounded-md text-sm focus:ring-2 focus:ring-[hsl(var(--primary))] outline-none"
+              />
             </div>
             <div className="flex gap-2 pt-2">
               <button type="button" onClick={() => setShowForm(false)} className="h-12 px-4 rounded-md border border-slate-300 font-semibold text-sm">Back</button>
