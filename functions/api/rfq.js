@@ -6,9 +6,10 @@ export async function onRequestPost(context) {
     const data = await request.json();
     const { company, contact_name, email, phone, country, delivery_location, timeline, target_price, message, items } = data;
 
-    // Email recipient configured in Cloudflare Pages Environment Variables or default
-    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "sjteo@quartzar.com.my";
+    // Verified destination address in Cloudflare Email Routing (from screenshot: atsolutionsmy@gmail.com)
+    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "atsolutionsmy@gmail.com";
     const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.com.my";
+    const replyTo = email ? `"${contact_name || company || 'Customer'}" <${email}>` : null;
 
     let emailBody = `New RFQ Quote Request Received via Website\n`;
     emailBody += `==============================================\n\n`;
@@ -34,13 +35,15 @@ export async function onRequestPost(context) {
       emailBody += `\nAdditional Message:\n${message}\n`;
     }
 
-    // Check if Cloudflare Email Routing binding (env.EMAIL or env.SELECTION) is active
     const emailBinding = env.EMAIL || env.SELECTION;
     if (emailBinding) {
       try {
         const subject = `New RFQ Quote Request from ${company || contact_name || "Website Buyer"}`;
         let mimeMessage = `From: Quartzar RFQ <${fromEmail}>\r\n`;
         mimeMessage += `To: <${toEmail}>\r\n`;
+        if (replyTo) {
+          mimeMessage += `Reply-To: ${replyTo}\r\n`;
+        }
         mimeMessage += `Subject: ${subject}\r\n`;
         mimeMessage += `Content-Type: text/plain; charset=utf-8\r\n\r\n`;
         mimeMessage += emailBody;
@@ -74,21 +77,10 @@ export async function onRequestPost(context) {
         { status: 400, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
       );
     }
-
-    return new Response(
-      JSON.stringify({ success: true, message: "Quote request submitted successfully!" }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
-      }
-    );
   } catch (error) {
     return new Response(
       JSON.stringify({ success: false, message: error.message }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" }
-      }
+      { status: 500, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
     );
   }
 }
