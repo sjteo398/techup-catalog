@@ -144,7 +144,7 @@ export default function Home() {
             </div>
             <div className="flex flex-wrap gap-3">
               <Link to="/catalog" className="btn-cta px-6 h-12 leading-[3rem] rounded-md font-semibold">Browse Catalog</Link>
-              <Link to="/oem" className="px-6 h-12 leading-[3rem] rounded-md font-semibold border border-white/25 hover:bg-white/10 transition-colors">OEM / Custom Solutions</Link>
+              <Link to="/contact" className="px-6 h-12 leading-[3rem] rounded-md font-semibold border border-white/25 hover:bg-white/10 transition-colors">Custom Solution Enquiries</Link>
             </div>
           </div>
         </div>

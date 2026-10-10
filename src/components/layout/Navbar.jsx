@@ -46,7 +46,7 @@ const nav = [
   { to: "/catalog", label: "Products", mega: true },
   { to: "/industries", label: "Industries" },
   { to: "/help-me-choose", label: "Help Me Choose" },
-  { to: "/oem", label: "OEM / Custom" },
+  // { to: "/oem", label: "OEM / Custom" },
   { to: "/sourcing", label: "How It Works" },
   { to: "/resources", label: "Resources" },
   { to: "/about", label: "About" },

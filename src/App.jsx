@@ -29,7 +29,7 @@ function AppRouter() {
       <Route path="/industries" element={<Industries />} />
       <Route path="/sector/:slug" element={<SectorPage />} />
       <Route path="/help-me-choose" element={<HelpMeChoose />} />
-      <Route path="/oem" element={<OEM />} />
+      {/* Hidden OEM Page Route: <Route path="/oem" element={<OEM />} /> */}
       <Route path="/sourcing" element={<Sourcing />} />
       <Route path="/resources" element={<Resources />} />
       <Route path="/contact" element={<Contact />} />

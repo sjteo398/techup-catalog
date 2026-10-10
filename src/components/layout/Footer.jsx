@@ -35,7 +35,7 @@ export default function Footer() {
             <h4 className="text-white font-sub font-semibold text-sm mb-3">Company</h4>
             <ul className="space-y-2 text-sm">
               <li><Link to="/about" className="hover:text-white">About Us</Link></li>
-              <li><Link to="/oem" className="hover:text-white">OEM / ODM</Link></li>
+              {/* <li><Link to="/oem" className="hover:text-white">OEM / ODM</Link></li> */}
               <li><Link to="/sourcing" className="hover:text-white">How It Works</Link></li>
               <li><Link to="/industries" className="hover:text-white">Industries</Link></li>
               <li><Link to="/resources" className="hover:text-white">Resources</Link></li>

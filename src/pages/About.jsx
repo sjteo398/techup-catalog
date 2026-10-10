@@ -81,7 +81,7 @@ export default function About() {
               ))}
             </div>
             <p className="mt-3 text-xs text-amber-600">ISO 9001 shown as placeholder — confirm/upload certificate before publishing.</p>
-            <Link to="/oem" className="inline-flex items-center gap-2 mt-8 btn-cta px-6 h-12 rounded-md font-semibold">Explore OEM Services <ArrowRight size={18} /></Link>
+            <Link to="/contact" className="inline-flex items-center gap-2 mt-8 btn-cta px-6 h-12 rounded-md font-semibold">Contact Us <ArrowRight size={18} /></Link>
           </div>
         </div>
       </section>
