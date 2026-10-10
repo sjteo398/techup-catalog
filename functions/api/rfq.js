@@ -36,20 +36,20 @@ export async function onRequestPost(context) {
 
     const subject = `New RFQ Quote Request from ${company || contact_name || "Website Buyer"}`;
 
+    let mimeMessage = `From: Quartzar RFQ <${fromEmail}>\r\n`;
+    mimeMessage += `To: <${toEmail}>\r\n`;
+    if (replyTo) {
+      mimeMessage += `Reply-To: ${replyTo}\r\n`;
+    }
+    mimeMessage += `Subject: ${subject}\r\n`;
+    mimeMessage += `Content-Type: text/plain; charset=utf-8\r\n\r\n`;
+    mimeMessage += emailBody;
+
     const emailBinding = env.EMAIL || env.SELECTION;
     const serviceBinding = env.EMAIL_SERVICE || env.EMAIL_WORKER;
 
     if (emailBinding && typeof emailBinding.send === 'function') {
       try {
-        let mimeMessage = `From: Quartzar RFQ <${fromEmail}>\r\n`;
-        mimeMessage += `To: <${toEmail}>\r\n`;
-        if (replyTo) {
-          mimeMessage += `Reply-To: ${replyTo}\r\n`;
-        }
-        mimeMessage += `Subject: ${subject}\r\n`;
-        mimeMessage += `Content-Type: text/plain; charset=utf-8\r\n\r\n`;
-        mimeMessage += emailBody;
-
         const emailMessage = new EmailMessage(fromEmail, toEmail, mimeMessage);
         await emailBinding.send(emailMessage);
         console.log("RFQ Email sent via direct Cloudflare Email binding to:", toEmail);
@@ -78,9 +78,15 @@ export async function onRequestPost(context) {
           fromEmail: fromEmail,
           sender: fromEmail,
           subject: subject,
-          text: emailBody,
-          body: emailBody,
-          message: emailBody,
+          text: mimeMessage,
+          body: mimeMessage,
+          message: mimeMessage,
+          mime: mimeMessage,
+          mimeMessage: mimeMessage,
+          raw: mimeMessage,
+          rawEmail: mimeMessage,
+          content: mimeMessage,
+          plainText: emailBody,
           replyTo: email,
           ...data
         };
