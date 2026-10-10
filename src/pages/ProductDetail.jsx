@@ -84,12 +84,6 @@ export default function ProductDetail() {
                 ))}
               </div>
             )}
-            {p.flags && (
-              <div className="mt-4 flex items-start gap-2 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded-lg p-3">
-                <AlertTriangle size={15} className="flex-shrink-0 mt-0.5" />
-                <span>{p.flags}</span>
-              </div>
-            )}
           </div>
 
           {/* Info */}
