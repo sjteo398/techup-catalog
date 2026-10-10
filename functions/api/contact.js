@@ -6,8 +6,9 @@ export async function onRequestPost(context) {
     const data = await request.json();
     const { name, company, email, phone, subject, message } = data;
 
-    // Default recipient configured to custom domain email sjteo@quartzar.com.my
-    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "sjteo@quartzar.com.my";
+    // Verified destination address required by Cloudflare SendEmail API
+    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "atsolutionsmy@gmail.com";
+    const customDomainAddress = "sjteo@quartzar.com.my";
     const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.com.my";
     const replyTo = email ? `"${name || company || 'Inquirer'}" <${email}>` : null;
 
@@ -23,7 +24,7 @@ export async function onRequestPost(context) {
     const mailSubject = subject || `New Contact Inquiry from ${name || company || "Website User"}`;
 
     let mimeMessage = `From: Quartzar Contact <${fromEmail}>\r\n`;
-    mimeMessage += `To: <${toEmail}>\r\n`;
+    mimeMessage += `To: <${customDomainAddress}>\r\n`;
     if (replyTo) {
       mimeMessage += `Reply-To: ${replyTo}\r\n`;
     }
