@@ -6,7 +6,6 @@ export async function onRequestPost(context) {
     const data = await request.json();
     const { name, company, email, phone, subject, message } = data;
 
-    // Verified destination address in Cloudflare Email Routing (from screenshot: atsolutionsmy@gmail.com)
     const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "atsolutionsmy@gmail.com";
     const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.com.my";
     const replyTo = email ? `"${name || company || 'Inquirer'}" <${email}>` : null;
@@ -20,10 +19,13 @@ export async function onRequestPost(context) {
     emailBody += `Subject: ${subject || "General Inquiry"}\n\n`;
     emailBody += `Message:\n${message || "N/A"}\n`;
 
+    const mailSubject = subject || `New Contact Inquiry from ${name || company || "Website User"}`;
+
     const emailBinding = env.EMAIL || env.SELECTION;
-    if (emailBinding) {
+    const serviceBinding = env.EMAIL_SERVICE || env.EMAIL_WORKER;
+
+    if (emailBinding && typeof emailBinding.send === 'function') {
       try {
-        const mailSubject = subject || `New Contact Inquiry from ${name || company || "Website User"}`;
         let mimeMessage = `From: Quartzar Contact <${fromEmail}>\r\n`;
         mimeMessage += `To: <${toEmail}>\r\n`;
         if (replyTo) {
@@ -35,7 +37,7 @@ export async function onRequestPost(context) {
 
         const emailMessage = new EmailMessage(fromEmail, toEmail, mimeMessage);
         await emailBinding.send(emailMessage);
-        console.log("Contact Email sent via Cloudflare Email Routing to:", toEmail);
+        console.log("Contact Email sent via direct Cloudflare Email binding to:", toEmail);
         return new Response(
           JSON.stringify({ success: true, message: "Message submitted successfully!" }),
           { status: 200, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
@@ -51,13 +53,60 @@ export async function onRequestPost(context) {
           { status: 500, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
         );
       }
+    } else if (serviceBinding && typeof serviceBinding.fetch === 'function') {
+      try {
+        const workerPayload = {
+          to: toEmail,
+          toEmail: toEmail,
+          recipient: toEmail,
+          from: fromEmail,
+          fromEmail: fromEmail,
+          sender: fromEmail,
+          subject: mailSubject,
+          text: emailBody,
+          body: emailBody,
+          message: emailBody,
+          replyTo: email,
+          ...data
+        };
+
+        const workerRes = await serviceBinding.fetch("https://email-worker/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(workerPayload)
+        });
+
+        const resText = await workerRes.text();
+        console.log("email-worker response:", workerRes.status, resText);
+
+        if (workerRes.ok) {
+          return new Response(
+            JSON.stringify({ success: true, message: "Message submitted successfully!", detail: resText }),
+            { status: 200, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+          );
+        } else {
+          return new Response(
+            JSON.stringify({
+              success: false,
+              message: `email-worker returned HTTP ${workerRes.status}: ${resText}`
+            }),
+            { status: 500, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+          );
+        }
+      } catch (workerErr) {
+        console.error("Error invoking email-worker Service Binding:", workerErr);
+        return new Response(
+          JSON.stringify({ success: false, message: `Worker invocation error: ${workerErr.message}` }),
+          { status: 500, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
+        );
+      }
     } else {
-      console.log("Contact Inquiry logged (Cloudflare Email binding not attached):", emailBody);
+      console.log("Contact Inquiry logged (No email binding attached):", emailBody);
       return new Response(
         JSON.stringify({
           success: false,
-          message: "Cloudflare Email binding (EMAIL) is not attached to this Pages project.",
-          hint: "Go to Workers & Pages -> techup-catalog -> Settings -> Functions -> Email Routing Bindings and add binding named EMAIL."
+          message: "Neither EMAIL binding nor EMAIL_SERVICE binding attached.",
+          hint: "Ensure EMAIL_SERVICE binding points to email-worker in Pages Settings -> Bindings."
         }),
         { status: 400, headers: { "Content-Type": "application/json", "Access-Control-Allow-Origin": "*" } }
       );
