@@ -43,7 +43,7 @@ export default function Sourcing() {
           <p className="eyebrow text-[hsl(var(--accent))]">End-to-End Solutions Integrator</p>
           <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight">How Quartzar Works</h1>
           <p className="mt-4 text-slate-300 max-w-3xl leading-relaxed">
-            Quartzar Technology & Automation Solutions (Registration No: 202603261070) is a specialized solutions provider dedicated to bridging the gap between global manufacturing capabilities and localized, client-specific needs. We transform high-quality, internationally sourced components into seamless, ready-to-deploy systems.
+            Quartzar Technology & Automation Solutions is a specialized solutions provider dedicated to bridging the gap between global manufacturing capabilities and localized, client-specific needs. We transform high-quality, internationally sourced components into seamless, ready-to-deploy systems.
           </p>
         </div>
       </section>
@@ -109,7 +109,7 @@ export default function Sourcing() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           <div className="rounded-xl bg-sky-50/60 border border-sky-200/70 p-6 grid sm:grid-cols-3 gap-6 text-center">
             {[
-              ["Registration No.", "202603261070"],
+              ["System Delivery", "Ready-to-Deploy Systems"],
               ["Core Competency", "End-to-End Systems Integrator"],
               ["Sourcing Advantage", "Direct OEM & Factory Pricing"]
             ].map(([k, v]) => (
