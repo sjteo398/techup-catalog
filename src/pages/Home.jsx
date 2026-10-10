@@ -11,7 +11,7 @@ const trust = [
   { icon: MapPin, title: "Local Malaysian brand", body: "Registered locally with responsive KL-based sales and technical support — one accountable partner, not an anonymous overseas storefront." },
   { icon: Factory, title: "Vetted OEM/ODM partners", body: "Manufactured by audited partner factories with 16+ years of industrial computing experience and 30,000+ units/month capacity." },
   { icon: ShieldCheck, title: "Quality control built-in", body: "Multi-stage quality assurance incorporating AOI, SPI, and X-ray inspection, supplemented by burn-in aging, ESD, and thermal reliability testing across production batches." },
-  { icon: Wrench, title: "Customization capability", body: "Full OEM/ODM services — branding, hardware configuration, custom enclosures and firmware for your application." },
+  { icon: Wrench, title: "Customization capability", body: "Full OEM/ODM services — hardware configuration, custom enclosures and firmware for your application." },
 ];
 
 const fade = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true, margin: "-80px" }, transition: { duration: 0.5 } };
