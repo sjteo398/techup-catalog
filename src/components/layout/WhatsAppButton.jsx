@@ -2,7 +2,7 @@ import React from "react";
 import { MessageCircle } from "lucide-react";
 
 // Placeholder WhatsApp number — swap to real Malaysia sales number later.
-const WHATSAPP_NUMBER = "60126818462";
+const WHATSAPP_NUMBER = "60123965193";
 
 export default function WhatsAppButton() {
   const href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Hi Quartzar, I'd like a quotation / product info.")}`;
