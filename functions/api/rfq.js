@@ -6,7 +6,8 @@ export async function onRequestPost(context) {
     const data = await request.json();
     const { company, contact_name, email, phone, country, delivery_location, timeline, target_price, message, items } = data;
 
-    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "atsolutionsmy@gmail.com";
+    // Default recipient configured to custom domain email sjteo@quartzar.com.my
+    const toEmail = env.RECIPIENT_EMAIL || env.ADMIN_EMAIL || "sjteo@quartzar.com.my";
     const fromEmail = env.SENDER_EMAIL || "noreply@quartzar.com.my";
     const replyTo = email ? `"${contact_name || company || 'Customer'}" <${email}>` : null;
 
