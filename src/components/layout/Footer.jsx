@@ -38,7 +38,7 @@ export default function Footer() {
               {/* <li><Link to="/oem" className="hover:text-white">OEM / ODM</Link></li> */}
               <li><Link to="/sourcing" className="hover:text-white">How It Works</Link></li>
               <li><Link to="/industries" className="hover:text-white">Industries</Link></li>
-              <li><Link to="/resources" className="hover:text-white">Resources</Link></li>
+              <li><Link to="/case-studies" className="hover:text-white">Case Studies</Link></li>
             </ul>
           </div>
           <div>

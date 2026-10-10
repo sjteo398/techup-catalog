@@ -13,7 +13,7 @@ import SectorPage from "@/pages/SectorPage";
 import HelpMeChoose from "@/pages/HelpMeChoose";
 import OEM from "@/pages/OEM";
 import Sourcing from "@/pages/Sourcing";
-import Resources from "@/pages/Resources";
+import CaseStudies from "@/pages/CaseStudies";
 import Contact from "@/pages/Contact";
 import Compare from "@/pages/Compare";
 import NotFound from "@/pages/NotFound";
@@ -31,7 +31,8 @@ function AppRouter() {
       <Route path="/help-me-choose" element={<HelpMeChoose />} />
       {/* Hidden OEM Page Route: <Route path="/oem" element={<OEM />} /> */}
       <Route path="/sourcing" element={<Sourcing />} />
-      <Route path="/resources" element={<Resources />} />
+      <Route path="/case-studies" element={<CaseStudies />} />
+      <Route path="/resources" element={<CaseStudies />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/compare" element={<Compare />} />
       <Route path="*" element={<NotFound />} />

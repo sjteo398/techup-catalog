@@ -48,7 +48,7 @@ const nav = [
   { to: "/help-me-choose", label: "Help Me Choose" },
   // { to: "/oem", label: "OEM / Custom" },
   { to: "/sourcing", label: "How It Works" },
-  { to: "/resources", label: "Resources" },
+  { to: "/case-studies", label: "Case Studies" },
   { to: "/about", label: "About" },
 ];
 
