@@ -10,7 +10,7 @@ import api from "@/lib/apiClient";
 const trust = [
   { icon: MapPin, title: "Local Malaysian brand", body: "Registered locally with responsive KL-based sales and technical support — one accountable partner, not an anonymous overseas storefront." },
   { icon: Factory, title: "Vetted OEM/ODM partners", body: "Manufactured by audited partner factories with 16+ years of industrial computing experience and 30,000+ units/month capacity." },
-  { icon: ShieldCheck, title: "Quality control built-in", body: "Multi-stage quality assurance incorporating AOI, SPI, and X-ray inspection, supplemented by burn-in aging, ESD, and thermal reliability testing across production batches." },
+  { icon: ShieldCheck, title: "Quality control built-in", body: "AOI, SPI, X-ray inspection plus aging, vibration, drop, ESD and temperature testing on production lines." },
   { icon: Wrench, title: "Customization capability", body: "Full OEM/ODM services — hardware configuration, custom enclosures and firmware for your application." },
 ];
 
