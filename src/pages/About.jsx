@@ -7,13 +7,13 @@ import Layout from "@/components/layout/Layout";
 const milestones = [
   ["2009", "Partner manufacturing operations founded — industrial control boards & systems."],
   ["2015", "Expanded OEM/ODM services across panel PCs, box PCs and network appliances."],
-  ["2022", "Full in-line QC: AOI, SPI, X-ray, aging, vibration, drop & ESD testing."],
+  ["2022", "Standardized in-line QC: AOI, SPI, X-ray inspection, burn-in aging & ESD testing."],
   ["2026", "Quartzar launches as the Malaysian brand front — local accountability, global scale."],
 ];
 
 const qc = [
-  { icon: Microscope, title: "Inspection", body: "AOI, SPI and X-ray inspection on every production batch." },
-  { icon: ClipboardCheck, title: "Reliability testing", body: "Aging, temperature, vibration, drop, ESD, durability and key-lifespan tests." },
+  { icon: Microscope, title: "Inspection", body: "AOI, SPI and X-ray inspection across manufacturing production batches." },
+  { icon: ClipboardCheck, title: "Reliability testing", body: "Burn-in aging, thermal, ESD, and environmental reliability testing across production lines." },
   { icon: Factory, title: "Capacity", body: "8,000 m² partner facility, 180+ staff, ~30,000 units/month." },
 ];
 
