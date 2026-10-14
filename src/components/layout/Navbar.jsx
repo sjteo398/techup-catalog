@@ -113,7 +113,7 @@ export default function Navbar() {
                         </div>
                         <div className="pt-2 mt-2 border-t border-slate-100 px-2 flex justify-between items-center">
                           <Link to="/catalog" className="text-xs font-semibold text-[hsl(var(--primary))] hover:underline">
-                            View All {totalActiveCount > 0 ? totalActiveCount : 13} Models →
+                            View All {totalActiveCount > 0 ? totalActiveCount : 108} Models →
                           </Link>
                         </div>
                       </div>
