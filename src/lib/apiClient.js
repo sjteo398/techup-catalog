@@ -155,14 +155,56 @@ const staticApi = {
       return { data: results.filter(Boolean) };
     }
 
-    // Wizard recommendation
+    // Wizard recommendation: Intelligent multi-factor scoring based on sector, environment & priority
     if (url === "/wizard/recommend") {
-      const { sector } = body || {};
-      let matches = await fetchJson("/data/products.json");
-      if (sector) {
-        matches = matches.filter((p) => Array.isArray(p.sectors) && p.sectors.includes(sector));
-      }
-      return { data: matches.slice(0, 4) };
+      const { sector, environment, priority } = body || {};
+      const allProducts = await fetchJson("/data/products.json");
+      const pool = allProducts.filter((p) => !p.hidden);
+
+      // 1. Initial sector pool (falls back to full active catalog if needed)
+      let candidates = sector ? pool.filter((p) => Array.isArray(p.sectors) && p.sectors.includes(sector)) : pool;
+      if (candidates.length === 0) candidates = pool;
+
+      // 2. Score candidates based on deployment environment and technical priority
+      const scored = candidates.map((p) => {
+        let score = 10;
+        const specsStr = JSON.stringify(p.specs || {}).toLowerCase();
+
+        // Environment weighting
+        if (environment === "harsh") {
+          if (p.cooling === "Fanless") score += 6;
+          if (p.category === "embedded-box-pc" || p.category === "panel-pc") score += 5;
+          if (specsStr.includes("wide-range") || specsStr.includes("ip65") || specsStr.includes("all-metal")) score += 4;
+        } else if (environment === "invehicle") {
+          if (specsStr.includes("9–36v") || specsStr.includes("9-36v") || specsStr.includes("wide-range")) score += 8;
+          if (p.form_factor?.includes("3.5") || p.form_factor?.includes("Box PC")) score += 6;
+          if (p.cooling === "Fanless") score += 4;
+        } else if (environment === "controlled") {
+          if (p.category === "mini-pc" || p.category === "all-in-one" || p.category === "ops-modules") score += 6;
+          if (p.series_code?.startsWith("QM") || p.series_code?.startsWith("QT")) score += 3;
+        }
+
+        // Priority weighting
+        if (priority === "compute") {
+          const cpu = (p.cpu_platform || "").toLowerCase();
+          if (cpu.includes("ultra") || cpu.includes("i7") || cpu.includes("i9") || cpu.includes("ryzen")) score += 8;
+          if (p.series_code === "QCU" || p.series_code === "QEU") score += 5;
+        } else if (priority === "io") {
+          if (specsStr.includes("com") || specsStr.includes("gpio") || specsStr.includes("lan") || specsStr.includes("poe")) score += 6;
+          if (p.series_code === "QEV" || p.series_code === "QNR" || p.series_code === "QEN" || p.series_code === "QCL") score += 6;
+        } else if (priority === "compact") {
+          if (p.form_factor?.includes("3.5") || p.form_factor?.includes("NUC") || p.form_factor?.includes("Mini-ITX")) score += 6;
+          if (p.series_code === "QCC" || p.series_code === "QEM" || p.series_code === "QMM") score += 6;
+        } else if (priority === "display") {
+          if (p.category === "panel-pc" || p.category === "all-in-one" || p.category === "ops-modules") score += 10;
+          if (p.series_code === "QTX" || p.series_code === "QTT" || p.series_code === "QTB") score += 8;
+        }
+
+        return { product: p, score };
+      });
+
+      scored.sort((a, b) => b.score - a.score);
+      return { data: scored.slice(0, 4).map((s) => s.product) };
     }
 
     // Form submissions (RFQ / Contact) -> Send to Cloudflare Function /api/rfq or /api/contact
