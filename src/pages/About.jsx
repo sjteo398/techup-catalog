@@ -14,8 +14,8 @@ import Layout from "@/components/layout/Layout";
 const milestones = [
   ["2009", "Manufacturing operations founded — dedicated industrial control board and embedded computing production."],
   ["2016", "Awarded High-Tech Enterprise status; certified under ISO 9001 Quality Management and 3C standards."],
-  ["2021", "Annual sales exceeded ¥200 million with full smart factory and digital line modernization."],
-  ["2024–Present", "Structural upgrades and regional brand expansion as Quartzar Technology & Automation Solutions."],
+  ["2021", "Annual sales exceeded MYR 130 million with full smart factory and digital line modernization."],
+  ["2024", "Structural upgrades and regional brand expansion as Quartzar Technology & Automation Solutions."],
 ];
 
 const qc = [
@@ -170,7 +170,7 @@ export default function About() {
             <div className="mt-8 space-y-6">
               {milestones.map(([y, t]) => (
                 <div key={y} className="flex gap-5">
-                  <div className="font-mono font-extrabold text-[hsl(var(--primary))] w-32 flex-shrink-0 text-base">
+                  <div className="font-mono font-extrabold text-[hsl(var(--primary))] w-14 flex-shrink-0 text-base">
                     {y}
                   </div>
                   <div className="flex-1 border-l-2 border-slate-200 pl-5 pb-1">
