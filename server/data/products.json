@@ -9,7 +9,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra",
@@ -54,7 +54,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra",
@@ -92,7 +92,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake",
@@ -130,7 +130,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel 12–14th Gen",
@@ -168,7 +168,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake",
@@ -206,7 +206,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake",
@@ -243,8 +243,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -281,8 +282,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -319,8 +321,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -357,8 +360,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Gemini Lake",
@@ -395,8 +399,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Pentium",
@@ -433,8 +438,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Apollo Lake",
@@ -471,8 +477,8 @@
     "series_code": "QCB",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "smart-office",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Alder/Raptor Lake-S",
@@ -509,8 +515,8 @@
     "series_code": "QCB",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "smart-office",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Alder/Raptor Lake-S",
@@ -547,8 +553,8 @@
     "series_code": "QCB",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "smart-office",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Alder/Raptor Lake-S",
@@ -585,8 +591,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
@@ -630,8 +637,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake",
@@ -668,8 +676,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -706,8 +715,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Gemini Lake",
@@ -744,8 +754,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 11–12th Tiger/Alder Lake",
@@ -782,8 +793,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Alder/Raptor Lake -U/-P",
@@ -820,8 +832,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th -U/-P",
@@ -858,8 +871,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen 5/7 (Phoenix)",
@@ -896,8 +910,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen AI 300",
@@ -934,8 +949,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen 5/7 (Phoenix)",
@@ -972,8 +988,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Elkhart Lake",
@@ -1010,8 +1027,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Elkhart Lake",
@@ -1056,8 +1074,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th i3~i9 / Pentium / Celeron",
@@ -1101,8 +1120,9 @@
     "series_code": "QCC",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen AI 300",
@@ -1147,7 +1167,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "transportation-ev"
     ],
     "specs": {
       "CPU Platform": "Intel 12–14th Gen",
@@ -1185,7 +1205,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "transportation-ev"
     ],
     "specs": {
       "CPU Platform": "Intel 12–14th Gen",
@@ -1223,7 +1243,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "transportation-ev"
     ],
     "specs": {
       "CPU Platform": "Intel 8–9th Gen",
@@ -1261,7 +1281,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "transportation-ev"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen 7000/9000",
@@ -1299,7 +1319,7 @@
     "category": "motherboards",
     "sectors": [
       "manufacturing-automation",
-      "digital-signage"
+      "transportation-ev"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen",
@@ -1337,6 +1357,7 @@
     "category": "embedded-box-pc",
     "sectors": [
       "manufacturing-automation",
+      "robotics",
       "transportation-ev"
     ],
     "specs": {
@@ -1380,6 +1401,7 @@
     "category": "embedded-box-pc",
     "sectors": [
       "manufacturing-automation",
+      "robotics",
       "transportation-ev"
     ],
     "specs": {
@@ -1427,6 +1449,7 @@
     "category": "embedded-box-pc",
     "sectors": [
       "manufacturing-automation",
+      "robotics",
       "transportation-ev"
     ],
     "specs": {
@@ -1464,8 +1487,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -1511,8 +1535,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 11th Gen",
@@ -1549,8 +1574,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 8th Gen",
@@ -1587,8 +1613,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Elkhart Lake",
@@ -1625,8 +1652,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Apollo Lake",
@@ -1663,8 +1691,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11–12th Gen",
@@ -1701,8 +1730,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -1739,8 +1769,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -1777,8 +1808,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -1815,8 +1847,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
@@ -1853,8 +1886,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -1891,8 +1925,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen 5/7 (Phoenix)",
@@ -1929,8 +1964,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen -U/-P",
@@ -1967,8 +2003,8 @@
     "series_code": "QEV",
     "category": "embedded-box-pc",
     "sectors": [
-      "edge-ai-vision",
-      "manufacturing-automation"
+      "manufacturing-automation",
+      "robotics"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra / AMD Ryzen 6000-7000",
@@ -2005,8 +2041,8 @@
     "series_code": "QEV",
     "category": "embedded-box-pc",
     "sectors": [
-      "edge-ai-vision",
-      "manufacturing-automation"
+      "manufacturing-automation",
+      "robotics"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen",
@@ -2043,8 +2079,8 @@
     "series_code": "QEV",
     "category": "embedded-box-pc",
     "sectors": [
-      "edge-ai-vision",
-      "manufacturing-automation"
+      "manufacturing-automation",
+      "robotics"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen -U/-P",
@@ -2081,8 +2117,8 @@
     "series_code": "QEV",
     "category": "embedded-box-pc",
     "sectors": [
-      "edge-ai-vision",
-      "manufacturing-automation"
+      "manufacturing-automation",
+      "robotics"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11th Gen",
@@ -2119,8 +2155,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
@@ -2157,8 +2194,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
@@ -2195,8 +2233,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -2238,8 +2277,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -2276,8 +2316,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -2314,8 +2355,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Gemini Lake",
@@ -2352,8 +2394,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Elkhart Lake",
@@ -2390,8 +2433,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -2428,8 +2472,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -2466,8 +2511,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen AI 300",
@@ -2504,8 +2550,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Elkhart Lake",
@@ -2542,8 +2589,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen -U/-P",
@@ -2580,8 +2628,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen AI 300",
@@ -2618,8 +2667,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
@@ -2656,8 +2705,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra",
@@ -2694,8 +2743,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "Intel Core 13th Gen",
@@ -2732,8 +2781,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12th Gen",
@@ -2770,8 +2819,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "AMD Ryzen AI 300",
@@ -2808,8 +2857,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Elkhart Lake",
@@ -2846,8 +2895,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -2884,8 +2933,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11th Gen",
@@ -2922,8 +2971,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12th Gen",
@@ -2960,8 +3009,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -2998,8 +3047,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -3036,8 +3085,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -3074,8 +3123,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",
@@ -3112,8 +3161,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–14th",
@@ -3150,8 +3198,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–14th",
@@ -3196,8 +3243,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–14th",
@@ -3234,8 +3280,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen",
@@ -3272,8 +3317,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen",
@@ -3310,8 +3354,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 11–12th Tiger/Alder Lake",
@@ -3348,8 +3391,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 11th Tiger Lake-U",
@@ -3386,8 +3428,7 @@
     "series_code": "QNR",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Elkhart Lake",
@@ -3424,8 +3465,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen",
@@ -3462,8 +3502,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Gen",
@@ -3509,8 +3548,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Elkhart Lake",
@@ -3547,8 +3585,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -3585,8 +3622,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -3623,8 +3659,7 @@
     "series_code": "QNS",
     "category": "network-security",
     "sectors": [
-      "network-security-appliances",
-      "smart-infrastructure"
+      "network-security"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron",
@@ -3662,7 +3697,8 @@
     "category": "panel-pc",
     "sectors": [
       "manufacturing-automation",
-      "smart-retail"
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -3700,7 +3736,8 @@
     "category": "panel-pc",
     "sectors": [
       "manufacturing-automation",
-      "smart-retail"
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -3746,7 +3783,8 @@
     "category": "panel-pc",
     "sectors": [
       "manufacturing-automation",
-      "smart-retail"
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -3784,7 +3822,8 @@
     "category": "panel-pc",
     "sectors": [
       "manufacturing-automation",
-      "smart-retail"
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",
@@ -3821,8 +3860,9 @@
     "series_code": "QTT",
     "category": "all-in-one",
     "sectors": [
-      "smart-retail",
-      "corporate-kiosk"
+      "smart-office",
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen",
@@ -3859,8 +3899,9 @@
     "series_code": "QTT",
     "category": "all-in-one",
     "sectors": [
-      "smart-retail",
-      "corporate-kiosk"
+      "smart-office",
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen",
@@ -3897,8 +3938,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra",
@@ -3935,8 +3975,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 13th Gen",
@@ -3973,8 +4012,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen -U/-P",
@@ -4011,8 +4049,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen -U/-P",
@@ -4049,8 +4086,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra",
@@ -4087,8 +4123,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11–12th Tiger/Alder Lake",
@@ -4125,8 +4160,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11th Gen",
@@ -4160,7 +4194,7 @@
     "category": "live-systems",
     "sectors": [
       "digital-signage",
-      "retail-kiosk"
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",

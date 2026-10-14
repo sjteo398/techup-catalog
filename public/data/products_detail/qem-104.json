@@ -8,8 +8,9 @@
     "series_code": "QEM",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "robotics",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "Supported Board Configurations": "3 Board Options: AD600Z3AW, RP7003AW, UT1003AW",

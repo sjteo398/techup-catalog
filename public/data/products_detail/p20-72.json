@@ -8,8 +8,9 @@
     "series_code": "QTT",
     "category": "all-in-one",
     "sectors": [
-      "smart-retail",
-      "corporate-kiosk"
+      "smart-office",
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen",

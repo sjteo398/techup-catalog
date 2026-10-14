@@ -8,8 +8,9 @@
     "series_code": "QCL",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "retail-kiosk",
+      "medical-healthcare",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Pentium",

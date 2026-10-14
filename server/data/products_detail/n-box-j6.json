@@ -8,8 +8,9 @@
     "series_code": "QEN",
     "category": "embedded-box-pc",
     "sectors": [
-      "manufacturing-automation",
-      "transportation-ev"
+      "network-security",
+      "transportation-ev",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel Celeron / Apollo Lake",

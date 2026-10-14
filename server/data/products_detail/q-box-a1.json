@@ -8,8 +8,8 @@
     "series_code": "QEV",
     "category": "embedded-box-pc",
     "sectors": [
-      "edge-ai-vision",
-      "manufacturing-automation"
+      "manufacturing-automation",
+      "robotics"
     ],
     "specs": {
       "CPU Platform": "Intel Core 11th Gen",

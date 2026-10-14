@@ -8,8 +8,8 @@
     "series_code": "QCB",
     "category": "motherboards",
     "sectors": [
-      "manufacturing-automation",
-      "digital-signage"
+      "smart-office",
+      "manufacturing-automation"
     ],
     "specs": {
       "CPU Platform": "Intel 12–13th Alder/Raptor Lake-S",

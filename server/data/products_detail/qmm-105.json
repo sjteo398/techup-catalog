@@ -8,8 +8,8 @@
     "series_code": "QMM",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",

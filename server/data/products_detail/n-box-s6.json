@@ -9,6 +9,7 @@
     "category": "embedded-box-pc",
     "sectors": [
       "manufacturing-automation",
+      "robotics",
       "transportation-ev"
     ],
     "specs": {

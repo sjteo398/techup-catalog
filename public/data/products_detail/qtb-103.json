@@ -8,8 +8,7 @@
     "series_code": "QTB",
     "category": "ops-modules",
     "sectors": [
-      "digital-signage",
-      "education-interactive"
+      "digital-signage"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th Gen -U/-P",

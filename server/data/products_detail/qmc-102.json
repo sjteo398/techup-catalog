@@ -8,8 +8,9 @@
     "series_code": "QMC",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "network-security",
+      "digital-signage",
+      "smart-office"
     ],
     "specs": {
       "CPU Platform": "Intel Alder Lake-N",

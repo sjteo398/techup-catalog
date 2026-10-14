@@ -9,7 +9,8 @@
     "category": "panel-pc",
     "sectors": [
       "manufacturing-automation",
-      "smart-retail"
+      "retail-kiosk",
+      "medical-healthcare"
     ],
     "specs": {
       "CPU Platform": "Intel Core 12–13th -U/-P",

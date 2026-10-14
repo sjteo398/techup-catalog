@@ -8,8 +8,8 @@
     "series_code": "QMV",
     "category": "mini-pc",
     "sectors": [
-      "commercial-signage",
-      "smart-retail"
+      "smart-office",
+      "retail-kiosk"
     ],
     "specs": {
       "CPU Platform": "Intel Core Ultra -U/H",
