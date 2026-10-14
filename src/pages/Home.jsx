@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, ShieldCheck, MapPin, Factory, Wrench, Cpu, Layers, CheckCircle2 } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import HeroScroll from "@/components/HeroScroll";
-import ProductCard from "@/components/ProductCard";
 import api from "@/lib/apiClient";
 
 const trust = [
@@ -18,12 +17,10 @@ const fade = { initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }
 
 export default function Home() {
   const [cats, setCats] = useState([]);
-  const [featured, setFeatured] = useState([]);
   const [sectors, setSectors] = useState([]);
 
   useEffect(() => {
     api.get("/categories").then((r) => setCats(r.data));
-    api.get("/products", { params: { featured: true } }).then((r) => setFeatured(r.data.slice(0, 8)));
     api.get("/sectors").then((r) => setSectors(r.data));
   }, []);
 
@@ -92,19 +89,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured products */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <motion.div {...fade} className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
-          <div>
-            <p className="eyebrow text-[hsl(var(--accent))]">Featured</p>
-            <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-display font-bold">Best-selling & flagship products</h2>
-          </div>
-          <Link to="/help-me-choose" className="flex items-center gap-1 text-sm font-semibold text-[hsl(var(--primary))] link-underline">Not sure? Help Me Choose <ArrowRight size={16} /></Link>
-        </motion.div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featured.map((p) => <ProductCard key={p.slug} p={p} />)}
-        </div>
-      </section>
 
       {/* Industries */}
       <section className="bg-white border-y border-slate-200">
